@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "com.example.tdenisenko.flightreservation"
-        minSdkVersion 19
-        targetSdkVersion 20
+        minSdkVersion 10
+        targetSdkVersion 18
         versionCode 1
         versionName "1.0"
     }
