@@ -149,4 +149,16 @@
         android:layout_alignEnd="@+id/searchView"
         android:layout_marginRight="30dp" />
 
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One Way"
+        android:id="@+id/oneWay"
+        android:layout_toStartOf="@+id/searchView"
+        android:layout_toEndOf="@+id/textView2"
+        android:checked="false"
+        android:layout_above="@+id/textView"
+        android:layout_alignLeft="@+id/directFlight_checkBox"
+        android:layout_alignStart="@+id/directFlight_checkBox" />
+
 </RelativeLayout>
