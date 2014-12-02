@@ -55,5 +55,16 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, com.example.tdenisenko.flightreservation.Cabin.class);
         startActivity(intent);
     }
-
+    public void calenderView(View view) {
+        Intent intent = new Intent(this, calender.class);
+        startActivity(intent);
+    }
+    public void personView(View view) {
+        Intent intent = new Intent(this, personPicker.class);
+        startActivity(intent);
+    }
+    public void searchView(View view) {
+        Intent intent = new Intent(this, searchMy.class);
+        startActivity(intent);
+    }
 }

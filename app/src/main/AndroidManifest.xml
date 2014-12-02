@@ -22,7 +22,24 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".calender">
+            <intent-filter>
+                <action android:name="com.example.tdenisenko.flightreservation.calender" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".personPicker">
+            <intent-filter>
+                <action android:name="com.example.tdenisenko.flightreservation.personPicker" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".searchMy">
+            <intent-filter>
+                <action android:name="com.example.tdenisenko.flightreservation.search" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
