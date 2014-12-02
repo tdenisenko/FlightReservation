@@ -18,7 +18,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //--- find both the buttons---
-        Button button1 = (Button) findViewById(R.id.button);
+        /*Button button1 = (Button) findViewById(R.id.button);
         Button button2 = (Button) findViewById(R.id.button2);
         Button button3 = (Button) findViewById(R.id.button3);
         Button button4 = (Button) findViewById(R.id.button4);
@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
             public void onClick(View v) {
                 setContentView(R.layout.activity_main);
             }
-        });
+        });*/
     }
 
 
@@ -51,10 +51,9 @@ public class MainActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void cabin(View view) {
-        Intent intent = new Intent(this, cabin.class);
+    public void cabinView(View view) {
+        Intent intent = new Intent(this, com.example.tdenisenko.flightreservation.Cabin.class);
         startActivity(intent);
-
     }
 
 }
