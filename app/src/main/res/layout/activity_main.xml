@@ -30,19 +30,22 @@
             android:layout_alignStart="@+id/tableLayout"
             android:layout_centerVertical="true"
             android:layout_gravity="center_horizontal"
-            android:text="calender" />
+            android:text="calender"
+            android:onClick="calenderView" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="90dp"
-            android:text="picker" />
+            android:text="picker"
+            android:onClick="personView" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="90dp"
-            android:text="my" />
+            android:text="my"
+            android:onClick="searchView" />
     </TableLayout>
 
 </RelativeLayout>
