@@ -6,7 +6,8 @@
     android:background="@drawable/images"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/asdasd"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:onClick="personView">
 
 
     <NumberPicker

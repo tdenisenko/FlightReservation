@@ -6,7 +6,8 @@
     android:paddingTop="40dp"
     android:paddingBottom="40dp"
     android:background="@drawable/images"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:onClick="cabinView">
 
     <RadioButton
         android:layout_width="match_parent"
