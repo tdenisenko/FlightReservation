@@ -2,16 +2,13 @@ package com.example.tdenisenko.flightreservation;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 
 
-public class MainActivity extends Activity {
+public class    MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,4 +64,10 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, searchMy.class);
         startActivity(intent);
     }
+
+      public void parserView(View view){
+        Intent intent = new Intent(this,ParseURL.class);
+        startActivity(intent);
+    }
+
 }

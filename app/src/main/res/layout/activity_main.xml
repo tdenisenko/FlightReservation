@@ -48,4 +48,16 @@
             android:onClick="searchView" />
     </TableLayout>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parse"
+        android:id="@+id/parseUrl"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignLeft="@+id/tableLayout"
+        android:layout_alignStart="@+id/tableLayout"
+        android:layout_alignRight="@+id/tableLayout"
+        android:layout_alignEnd="@+id/tableLayout"
+        android:layout_alignParentBottom="true" />
+
 </RelativeLayout>
