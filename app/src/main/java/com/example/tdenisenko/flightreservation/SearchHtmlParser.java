@@ -13,9 +13,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
-/**
- * Created by AliKaan on 4.12.2014.
- */
+
 public class SearchHtmlParser {
     protected void onCreate(Bundle savedUInstanceState){
             //test için oluşturlacak text fieldı

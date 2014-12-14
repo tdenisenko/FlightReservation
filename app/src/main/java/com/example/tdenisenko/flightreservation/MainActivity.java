@@ -65,7 +65,7 @@ public class    MainActivity extends Activity {
         startActivity(intent);
     }
 
-      public void parserView(View view){
+     public void parserView(View view){
         Intent intent = new Intent(this,ParseURL.class);
         startActivity(intent);
     }
