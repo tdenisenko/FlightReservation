@@ -49,7 +49,7 @@ public class    MainActivity extends Activity {
     }
 
     public void cabinView(View view) {
-        Intent intent = new Intent(this, com.example.tdenisenko.flightreservation.Cabin.class);
+        Intent intent = new Intent(this, Cabin.class);
         startActivity(intent);
     }
     public void calenderView(View view) {
@@ -60,6 +60,12 @@ public class    MainActivity extends Activity {
         Intent intent = new Intent(this, personPicker.class);
         startActivity(intent);
     }
+
+    public void searchView(View view) {
+        Intent intent = new Intent(this, searchMy.class);
+        startActivity(intent);
+    }
+    /*
     public void searchView(View view) {
         Intent intent = new Intent(this, searchMy.class);
         startActivity(intent);
@@ -69,5 +75,5 @@ public class    MainActivity extends Activity {
         Intent intent = new Intent(this,ParseURL.class);
         startActivity(intent);
     }
-
+    */
 }
