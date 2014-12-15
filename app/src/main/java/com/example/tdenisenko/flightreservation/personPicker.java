@@ -10,7 +10,7 @@ import android.view.Menu;
 public class personPicker extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.person_picker);
+        //setContentView(R.layout.person_picker);
     }
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.my,menu);
