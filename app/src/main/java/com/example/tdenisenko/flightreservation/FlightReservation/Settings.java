@@ -8,4 +8,11 @@ public class Settings {
     String language;
     String currency;
     Boolean isImperial;
+
+    public Settings(String country, String language, String currency, Boolean isImperial) {
+        this.country = country;
+        this.language = language;
+        this.currency = currency;
+        this.isImperial = isImperial;
+    }
 }

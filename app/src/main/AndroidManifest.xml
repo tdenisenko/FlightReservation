@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tdenisenko.flightreservation" >
+    <!-- Allow to connect with internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -16,36 +18,50 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Cabin">
+        <activity android:name="com.example.tdenisenko.flightreservation.Cabin" >
             <intent-filter>
                 <action android:name="com.example.tdenisenko.flightreservation.cabin" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".calender">
+        <activity android:name="com.example.tdenisenko.flightreservation.calender" >
             <intent-filter>
                 <action android:name="com.example.tdenisenko.flightreservation.calender" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".personPicker">
+        <activity android:name="com.example.tdenisenko.flightreservation.personPicker" >
             <intent-filter>
                 <action android:name="com.example.tdenisenko.flightreservation.personPicker" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".searchMy">
+        <activity android:name="com.example.tdenisenko.flightreservation.searchMy" >
             <intent-filter>
                 <action android:name="com.example.tdenisenko.flightreservation.search" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".ParseURL">
-        <intent-filter>
-            <action android:name="com.example.tdenisenko.flightreservation.ParseURL" />
-            <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
-    </activity>
+
+
+
+        <activity
+            android:name="com.example.tdenisenko.flightreservation.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.example.tdenisenko.flightreservation.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.example.tdenisenko.flightreservation.DashboardActivity"
+            android:label="@string/title_activity_dashboard" >
+        </activity>
+
     </application>
 
 </manifest>

@@ -1,5 +1,8 @@
 package com.example.tdenisenko.flightreservation.FlightReservation;
 
+import android.content.Context;
+import android.widget.Toast;
+
 /**
  * Created by SULUNGOZ on 13.12.2014.
  */
@@ -8,8 +11,19 @@ public class User extends registerUser{
     String sessionID;
     String ipLocation;
     Settings setting;
-
+    Context context;
+    CharSequence text;
+    int duration = Toast.LENGTH_SHORT;
     private void register(){
+        if(userID==null){
+            //do something;
+        }
+        else{
+            context.getApplicationContext();
+            text="You've already registered";
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+        }
 
     }
 

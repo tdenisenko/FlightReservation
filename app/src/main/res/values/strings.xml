@@ -3,8 +3,8 @@
 
     <string name="app_name">FlightReservation</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>\
-    <string-array name="spinner1">
+    <string name="action_settings">Settings</string>
+\            <string-array name="spinner1">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -46,4 +46,14 @@
         <item>Business</item>
         <item>First Class</item>
     </string-array>
+    <!-- start of login1 -->
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="Login">Login:</string>
+    <string name="attempts">Attempts Left:</string>
+    <!-- end of login1 -->
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+
 </resources>
