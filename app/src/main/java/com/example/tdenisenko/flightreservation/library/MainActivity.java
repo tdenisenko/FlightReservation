@@ -1,4 +1,4 @@
-package com.example.tdenisenko.flightreservation;
+package com.example.tdenisenko.flightreservation.library;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import com.example.tdenisenko.flightreservation.R;
 
 
 public class    MainActivity extends Activity {

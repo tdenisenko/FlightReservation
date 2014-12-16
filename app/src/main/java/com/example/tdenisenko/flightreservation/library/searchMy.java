@@ -1,9 +1,10 @@
-package com.example.tdenisenko.flightreservation;
+package com.example.tdenisenko.flightreservation.library;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Menu;
@@ -11,10 +12,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.tdenisenko.flightreservation.FlightReservation.Settings;
+import com.example.tdenisenko.flightreservation.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -32,6 +35,8 @@ public class searchMy extends Activity {
     private Spinner spinner4;
     private TextView textView1;
     private TextView textView2;
+    private EditText departure;
+    private EditText arrival;
     Calendar myCalendar = Calendar.getInstance();
 
     DatePickerDialog.OnDateSetListener date1 = new DatePickerDialog.OnDateSetListener() {
@@ -72,6 +77,8 @@ public class searchMy extends Activity {
         spinner4 = (Spinner) findViewById(R.id.spinner4);
         textView1 = (TextView)findViewById(R.id.depdateTextView);
         textView2 = (TextView)findViewById(R.id.arrdateTextView);
+        departure = (EditText) findViewById(R.id.departure_editText);
+        arrival = (EditText) findViewById(R.id.arrival_editText);
 
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.spinner1, android.R.layout.simple_spinner_item);
@@ -197,6 +204,27 @@ public class searchMy extends Activity {
 
         settingsTextView.setText(builder.toString());
     }
+
+    public void openSiteView(View view){
+        String url = "http://www.skyscanner.com/transport/flights/";
+
+        url += departure.getText().toString().toLowerCase();
+        url += "/";
+        url += arrival.getText().toString().toLowerCase();
+        url += "/";
+        String dateArr[] = new String[3];
+        dateArr = textView1.getText().toString().split("/");
+        url += dateArr[2] + dateArr[1] + dateArr[0];
+        url += "/";
+        dateArr = textView2.getText().toString().split("/");
+        url += dateArr[2] + dateArr[1] + dateArr[0];
+
+        if (!url.startsWith("http://") && !url.startsWith("https://"))
+            url = "http://" + url;
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        startActivity(browserIntent);
+    }
+
 
 }
 

@@ -1,4 +1,4 @@
-package com.example.tdenisenko.flightreservation;
+package com.example.tdenisenko.flightreservation.library;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.TextView;
+
+import com.example.tdenisenko.flightreservation.R;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

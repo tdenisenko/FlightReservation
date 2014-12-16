@@ -1,4 +1,4 @@
-package com.example.tdenisenko.flightreservation;
+package com.example.tdenisenko.flightreservation.library;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.tdenisenko.flightreservation.library.UserFunctions;
+import com.example.tdenisenko.flightreservation.R;
 
 public class DashboardActivity extends Activity {
     UserFunctions userFunctions;

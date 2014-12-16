@@ -1,4 +1,4 @@
-package com.example.tdenisenko.flightreservation;
+package com.example.tdenisenko.flightreservation.library;
 
 import android.app.Activity;
 import android.graphics.Color;
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.tdenisenko.flightreservation.R;
 
 /**
  * Created by ktgry2 on 16.12.2014.

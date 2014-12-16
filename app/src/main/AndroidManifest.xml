@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.tdenisenko.flightreservation.MainActivity"
+            android:name=".library.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,28 +18,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.tdenisenko.flightreservation.Cabin" >
+        <activity android:name=".library.Cabin" >
             <intent-filter>
                 <action android:name="com.example.tdenisenko.flightreservation.cabin" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.tdenisenko.flightreservation.calender" >
+        <activity android:name=".library.calender" >
             <intent-filter>
                 <action android:name="com.example.tdenisenko.flightreservation.calender" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.tdenisenko.flightreservation.personPicker" >
+        <activity android:name=".library.personPicker" >
             <intent-filter>
                 <action android:name="com.example.tdenisenko.flightreservation.personPicker" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.tdenisenko.flightreservation.searchMy" >
+        <activity android:name=".library.searchMy" >
             <intent-filter>
                 <action android:name="com.example.tdenisenko.flightreservation.search" />
 
@@ -48,23 +48,23 @@
         </activity>
 
         <activity
-            android:name="com.example.tdenisenko.flightreservation.login"
+            android:name=".library.login"
             android:label="@string/Login" >
         </activity>
         <activity
-            android:name="com.example.tdenisenko.flightreservation.SearchHtmlParser"
+            android:name=".library.SearchHtmlParser"
             android:label="@string/SearchHtmlParser" >
         </activity>
         <activity
-            android:name="com.example.tdenisenko.flightreservation.LoginActivity"
+            android:name=".library.LoginActivity"
             android:label="@string/title_activity_login" >
         </activity>
         <activity
-            android:name="com.example.tdenisenko.flightreservation.RegisterActivity"
+            android:name=".library.RegisterActivity"
             android:label="@string/title_activity_register" >
         </activity>
         <activity
-            android:name="com.example.tdenisenko.flightreservation.DashboardActivity"
+            android:name=".library.DashboardActivity"
             android:label="@string/title_activity_dashboard" >
         </activity>
 

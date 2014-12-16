@@ -1,10 +1,13 @@
-package com.example.tdenisenko.flightreservation;
+package com.example.tdenisenko.flightreservation.library;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.example.tdenisenko.flightreservation.R;
+import com.example.tdenisenko.flightreservation.library.ParseURL;
 
 
 public class SearchHtmlParser extends Activity {
