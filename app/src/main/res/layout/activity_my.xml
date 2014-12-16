@@ -12,8 +12,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/departure_editText"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/cabin_textView"
+
         android:layout_marginLeft="5dp"/>
 
     <TextView
