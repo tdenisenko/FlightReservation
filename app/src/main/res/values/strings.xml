@@ -40,4 +40,10 @@
         <item>8</item>
         <item>9</item>
     </string-array>
+    <string-array name="spinner4">
+        <item>Economy</item>
+        <item>Premium Economy</item>
+        <item>Business</item>
+        <item>First Class</item>
+    </string-array>
 </resources>
