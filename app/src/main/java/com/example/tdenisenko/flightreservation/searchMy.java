@@ -3,27 +3,29 @@ package com.example.tdenisenko.flightreservation;
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.tdenisenko.flightreservation.FlightReservation.CustomOnItemSelectedListener;
+import com.example.tdenisenko.flightreservation.FlightReservation.Settings;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.List;
 import java.util.Locale;
 
 
+/**
+ * Created by SULUNGOZ on 03.12.2014.
+ */
 public class searchMy extends Activity {
-
+    private static final int RESULT_SETTINGS = 1;
     private Spinner spinner1;
     private Spinner spinner2;
     private Spinner spinner3;
@@ -62,6 +64,7 @@ public class searchMy extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
+
 
         spinner1 = (Spinner) findViewById(R.id.spinner1);
         spinner2 = (Spinner) findViewById(R.id.spinner2);
@@ -125,7 +128,7 @@ public class searchMy extends Activity {
         spinner4 = (Spinner) findViewById(R.id.spinner4);
     }
     public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.my,menu);
+        getMenuInflater().inflate(R.menu.my, menu);
         return true;
     }
 
@@ -148,5 +151,52 @@ public class searchMy extends Activity {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case R.id.menu_settings:
+                Intent i = new Intent(this, Settings.class);
+                startActivityForResult(i, RESULT_SETTINGS);
+                break;
+
+        }
+
+        return true;
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        switch (requestCode) {
+            case RESULT_SETTINGS:
+                showUserSettings();
+                break;
+
+        }
+
+    }
+
+    private void showUserSettings() {
+        SharedPreferences sharedPrefs = PreferenceManager
+                .getDefaultSharedPreferences(this);
+
+        StringBuilder builder = new StringBuilder();
+
+        builder.append("\n Username: "
+                + sharedPrefs.getString("prefUsername", "NULL"));
+
+        builder.append("\n Send report:"
+                + sharedPrefs.getBoolean("prefSendReport", false));
+
+        builder.append("\n Sync Frequency: "
+                + sharedPrefs.getString("prefSyncFrequency", "NULL"));
+
+        TextView settingsTextView = (TextView) findViewById(R.id.textUserSettings);
+
+        settingsTextView.setText(builder.toString());
+    }
+
 }
 

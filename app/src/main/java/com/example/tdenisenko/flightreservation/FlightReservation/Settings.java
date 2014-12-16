@@ -1,18 +1,22 @@
 package com.example.tdenisenko.flightreservation.FlightReservation;
 
+import android.os.Bundle;
+import android.preference.PreferenceActivity;
+
+import com.example.tdenisenko.flightreservation.R;
+
 /**
  * Created by SULUNGOZ on 13.12.2014.
  */
-public class Settings {
-    String country;
-    String language;
-    String currency;
-    Boolean isImperial;
+public class Settings extends PreferenceActivity {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-    public Settings(String country, String language, String currency, Boolean isImperial) {
-        this.country = country;
-        this.language = language;
-        this.currency = currency;
-        this.isImperial = isImperial;
+        addPreferencesFromResource(R.layout.settings);
+
     }
+
+
+
 }

@@ -6,7 +6,7 @@
     android:paddingTop="20dp"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
-    android:id="@+id/sd">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <EditText
         android:layout_width="wrap_content"
@@ -104,6 +104,7 @@
         android:layout_toEndOf="@id/cabin_textView"
         android:layout_alignParentEnd="true"
         android:layout_marginLeft="5dp"
+        android:onClick="calendarView"
         android:clickable="true" />
 
     <TextView
@@ -245,6 +246,11 @@
         android:layout_marginLeft="50dp"
         android:layout_marginBottom="25dp"
         android:onClick="loginView" />
-
+    <TextView
+        android:id="@+id/textUserSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:context=".searchMy" />
 
 </RelativeLayout>

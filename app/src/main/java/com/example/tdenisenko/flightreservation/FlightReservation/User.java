@@ -5,6 +5,7 @@ import android.widget.Toast;
 
 /**
  * Created by SULUNGOZ on 13.12.2014.
+ * Edited by Karaakin on 16.12.2014.
  */
 public class User extends registerUser{
 
@@ -14,6 +15,13 @@ public class User extends registerUser{
     Context context;
     CharSequence text;
     int duration = Toast.LENGTH_SHORT;
+
+    public User(Settings setting, String sessionID, String ipLocation) {
+        this.setting = setting;
+        this.sessionID = sessionID;
+        this.ipLocation = ipLocation;
+    }
+
     private void register(){
         if(userID==null){
             //do something;

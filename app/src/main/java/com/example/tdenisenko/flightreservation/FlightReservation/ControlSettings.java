@@ -5,9 +5,7 @@ package com.example.tdenisenko.flightreservation.FlightReservation;
  */
 public  class ControlSettings extends Settings {
 
-    public ControlSettings(String country, String language, String currency, Boolean isImperial) {
-        super(country, language, currency, isImperial);
-    }
+
 
     private void changeCurrency(){
 

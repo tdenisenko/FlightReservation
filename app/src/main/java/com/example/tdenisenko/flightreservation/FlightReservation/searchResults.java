@@ -2,13 +2,24 @@ package com.example.tdenisenko.flightreservation.FlightReservation;
 
 /**
  * Created by SULUNGOZ on 13.12.2014.
+ * Edited by Karaakin on 16.12.2014.
  */
 public class searchResults {
 
+
+
     FlightData [] flightList=new FlightData[1000];
+
+
+
     String sortBy;
+
+
+
     int passngerCount;
     Passengers passengers;
+
+
     int elementPerPage;
     String cityOfDestination;
     String cityOfDeparture;
@@ -25,33 +36,42 @@ public class searchResults {
     private FlightData [] sort()  {
         return sort();
     }
+
+
     private void previousPage(){
 
     }
     private void nextPage(){
 
     }
-    private FlightData[] getFlightList(){
-        return getFlightList();
+    public String getSortBy() {
+        return sortBy;
     }
-    private String getSortBy(){
-        return getSortBy();
+
+    public FlightData[] getFlightList() {
+        return flightList;
     }
-    private int getPassngerCount(){
-        return getPassngerCount();
+    public int getPassngerCount() {
+        return passngerCount;
     }
-    private Passengers getPassengers(){
-        return getPassengers();
+
+    public Passengers getPassengers() {
+        return passengers;
     }
-    private int getElementPerPage(){
-        return getElementPerPage();
+    public int getElementPerPage() {
+        return elementPerPage;
     }
-    private String getCityOfDestination(){
-        return getCityOfDestination();
+
+    public String getCityOfDestination() {
+        return cityOfDestination;
     }
-    private String getCityOfDeparture(){
-        return getCityOfDestination();
+
+    public String getCityOfDeparture() {
+        return cityOfDeparture;
     }
+
+
+
     private FlightData[] setFlightList(){
         return  setFlightList();
     }
