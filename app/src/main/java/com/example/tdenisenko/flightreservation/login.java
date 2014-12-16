@@ -26,7 +26,7 @@ public class login extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.login1);
         username = (EditText)findViewById(R.id.editText1);
         password = (EditText)findViewById(R.id.editText2);
         attempts = (TextView)findViewById(R.id.textView5);
@@ -48,7 +48,10 @@ public class login extends Activity {
     public void login(View view){
         if(username.getText().toString().equals("admin") &&
                 password.getText().toString().equals("admin")){
+
             Toast.makeText(getApplicationContext(), "Redirecting...",
+                    Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Logged in",
                     Toast.LENGTH_SHORT).show();
             /*SharedPreferences.Editor editor = sharedpreferences.edit();
             String u = username.getText().toString();

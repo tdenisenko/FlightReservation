@@ -1,21 +1,20 @@
 package com.example.tdenisenko.flightreservation;
 
-import android.os.Bundle;
-
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.tdenisenko.flightreservation.library.DatabaseHandler;
 import com.example.tdenisenko.flightreservation.library.UserFunctions;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class LoginActivity extends Activity {
     Button btnLogin;
@@ -28,23 +27,25 @@ public class LoginActivity extends Activity {
     private static String KEY_SUCCESS = "success";
     private static String KEY_ERROR = "error";
     private static String KEY_ERROR_MSG = "error_msg";
-    private static String KEY_UID = "uid";
+
     private static String KEY_NAME = "name";
     private static String KEY_EMAIL = "email";
-    private static String KEY_CREATED_AT = "created_at";
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-
+        Toast.makeText(getApplicationContext(), "Loggingin",
+                Toast.LENGTH_SHORT).show();
         // Importing all assets like buttons, text fields
         inputEmail = (EditText) findViewById(R.id.loginEmail);
         inputPassword = (EditText) findViewById(R.id.loginPassword);
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnLinkToRegister = (Button) findViewById(R.id.btnLinkToRegisterScreen);
         loginErrorMsg = (TextView) findViewById(R.id.login_error);
-
+        Toast.makeText(getApplicationContext(), "variableset",
+                Toast.LENGTH_SHORT).show();
         // Login button Click Event
         btnLogin.setOnClickListener(new View.OnClickListener() {
 
@@ -54,7 +55,8 @@ public class LoginActivity extends Activity {
                 UserFunctions userFunction = new UserFunctions();
                 Log.d("Button", "Login");
                 JSONObject json = userFunction.loginUser(email, password);
-
+                Toast.makeText(getApplicationContext(), "clicked",
+                        Toast.LENGTH_SHORT).show();
                 // check for login1 response
                 try {
                     if (json.getString(KEY_SUCCESS) != null) {
@@ -68,7 +70,7 @@ public class LoginActivity extends Activity {
 
                             // Clear all previous data in database
                             userFunction.logoutUser(getApplicationContext());
-                            db.addUser(json_user.getString(KEY_NAME), json_user.getString(KEY_EMAIL), json.getString(KEY_UID), json_user.getString(KEY_CREATED_AT));
+                            db.addUser(json_user.getString(KEY_NAME), json_user.getString(KEY_EMAIL));
 
                             // Launch Dashboard Screen
                             Intent dashboard = new Intent(getApplicationContext(), DashboardActivity.class);
@@ -76,7 +78,8 @@ public class LoginActivity extends Activity {
                             // Close all views before launching Dashboard
                             dashboard.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             startActivity(dashboard);
-
+                            Toast.makeText(getApplicationContext(), "annen!!!",
+                                    Toast.LENGTH_SHORT).show();
                             // Close Login Screen
                             finish();
                         }else{

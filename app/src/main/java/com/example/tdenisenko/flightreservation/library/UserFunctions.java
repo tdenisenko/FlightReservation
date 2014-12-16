@@ -16,8 +16,8 @@ public class UserFunctions {
 
     private JSONParser jsonParser;
 
-    private static String loginURL = "http://10.0.2.2/ah_login_api/";
-    private static String registerURL = "http://10.0.2.2/ah_login_api/";
+    private static String loginURL = "http://sifononline.com/flightreservation/";
+    private static String registerURL = "http://sifononline.com/flightreservation";
 
     private static String login_tag = "login";
     private static String register_tag = "register";

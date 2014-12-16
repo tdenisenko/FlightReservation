@@ -47,7 +47,10 @@
             </intent-filter>
         </activity>
 
-
+        <activity
+            android:name="com.example.tdenisenko.flightreservation.login"
+            android:label="@string/Login" >
+        </activity>
 
         <activity
             android:name="com.example.tdenisenko.flightreservation.LoginActivity"
