@@ -51,7 +51,10 @@
             android:name="com.example.tdenisenko.flightreservation.login"
             android:label="@string/Login" >
         </activity>
-
+        <activity
+            android:name="com.example.tdenisenko.flightreservation.SearchHtmlParser"
+            android:label="@string/SearchHtmlParser" >
+        </activity>
         <activity
             android:name="com.example.tdenisenko.flightreservation.LoginActivity"
             android:label="@string/title_activity_login" >

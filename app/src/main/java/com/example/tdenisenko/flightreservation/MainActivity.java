@@ -65,6 +65,10 @@ public class    MainActivity extends Activity {
         Intent intent = new Intent(this, searchMy.class);
         startActivity(intent);
     }
+    public void parserView(View view){
+        Intent intent = new Intent(this, SearchHtmlParser.class);
+        startActivity(intent);
+    }
     /*
     public void searchView(View view) {
         Intent intent = new Intent(this, searchMy.class);

@@ -58,6 +58,7 @@
         android:layout_alignStart="@+id/tableLayout"
         android:layout_alignRight="@+id/tableLayout"
         android:layout_alignEnd="@+id/tableLayout"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:onClick="parserView" />
 
 </RelativeLayout>

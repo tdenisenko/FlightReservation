@@ -40,10 +40,11 @@ public class ParseURL extends AsyncTask<String,Void,String> {
         }
         return buffer.toString();
     }
-    public void onPostExecute(String s){
-        super.onPostExecute(s);
+    //public void onPostExecute(String s){
+      //  super.onPostExecute(s);
         //respText.setText(s);
-    }
+    // }
+
 
 
 }
