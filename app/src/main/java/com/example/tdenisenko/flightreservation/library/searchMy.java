@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import com.example.tdenisenko.flightreservation.FlightReservation.Settings;
 import com.example.tdenisenko.flightreservation.R;
+import com.example.tdenisenko.flightreservation.login.HomeActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -155,7 +156,7 @@ public class searchMy extends Activity {
     }
 
     public void loginView(View view) {
-        Intent intent = new Intent(this, login.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
     @Override
@@ -186,6 +187,7 @@ public class searchMy extends Activity {
     }
 
     private void showUserSettings() {
+
         SharedPreferences sharedPrefs = PreferenceManager
                 .getDefaultSharedPreferences(this);
 
@@ -223,6 +225,12 @@ public class searchMy extends Activity {
             url = "http://" + url;
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         startActivity(browserIntent);
+        //Uri uri = Uri.parse(url);
+        //Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        //startActivity(intent);
+        //WebView webview = new WebView(this);
+        //setContentView(webview);
+        //webview.loadUrl(url);
     }
 
 
