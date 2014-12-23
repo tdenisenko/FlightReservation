@@ -20,15 +20,15 @@ public class HomeActivity extends Activity
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 	     super.onCreate(savedInstanceState);
-	     setContentView(R.layout.home);
+	     setContentView(R.layout.login);
 	     
 	     // create a instance of SQLite Database
 	     loginDataBaseAdapter=new LoginDataBaseAdapter(this);
 	     loginDataBaseAdapter=loginDataBaseAdapter.open();
 	     
 	     // Get The Refference Of Buttons
-	     btnSignIn=(Button)findViewById(R.id.buttonSignIN);
-	     btnSignUp=(Button)findViewById(R.id.buttonSignUP);
+	     btnSignIn=(Button)findViewById(R.id.buttonSignIn);
+	     btnSignUp=(Button)findViewById(R.id.buttonSignUp);
 			
 	    // Set OnClick Listener on SignUp button 
 	    btnSignUp.setOnClickListener(new View.OnClickListener() {
