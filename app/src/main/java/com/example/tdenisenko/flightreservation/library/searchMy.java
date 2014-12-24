@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -20,6 +21,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.tdenisenko.flightreservation.FlightReservation.Setting;
 import com.example.tdenisenko.flightreservation.FlightReservation.Settings;
 import com.example.tdenisenko.flightreservation.R;
 import com.example.tdenisenko.flightreservation.login.HomeActivity;
@@ -150,10 +152,7 @@ public class searchMy extends Activity {
         spinner3 = (Spinner) findViewById(R.id.spinner3);
         spinner4 = (Spinner) findViewById(R.id.spinner4);
     }
-    public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.my, menu);
-        return true;
-    }
+
 
     private void updateLabel1() {
 
@@ -245,6 +244,7 @@ public class searchMy extends Activity {
 
         dialog.show();
     }
+    /*
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -271,7 +271,7 @@ public class searchMy extends Activity {
         }
 
     }
-
+*/
     private void showUserSettings() {
 
         SharedPreferences sharedPrefs = PreferenceManager
@@ -317,6 +317,44 @@ public class searchMy extends Activity {
         //WebView webview = new WebView(this);
         //setContentView(webview);
         //webview.loadUrl(url);
+    }
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+     /*  getMenuInflater().inflate(R.menu.my, menu);
+        return true;*/
+        super.onCreateOptionsMenu(menu);
+        MenuInflater menutanim = getMenuInflater();
+        menutanim.inflate(R.menu.my, menu);
+        return true;
+    }
+
+
+    @Override/*
+   public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        if (id == R.id.setting) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+
+    }*/
+    public boolean onOptionsItemSelected(MenuItem item){
+
+        switch (item.getItemId()){
+            case R.id.SettingsOption:
+                Intent intent =new Intent(this ,Setting.class );
+                this.startActivity(intent);
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
+
+        }
+        return true;
+
+
     }
 
 

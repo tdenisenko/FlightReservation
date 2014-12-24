@@ -4,9 +4,11 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.tdenisenko.flightreservation.FlightReservation.Setting;
 import com.example.tdenisenko.flightreservation.R;
 
 
@@ -34,21 +36,47 @@ public class    MainActivity extends Activity {
         @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.my, menu);
-        return true;
-    }
+     /*  getMenuInflater().inflate(R.menu.my, menu);
+        return true;*/
+          super.onCreateOptionsMenu(menu);
+            MenuInflater menutanim = getMenuInflater();
+            menutanim.inflate(R.menu.my, menu);
+            return true;
+        }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+
+    @Override/*
+   public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-        if (id == R.id.action_settings) {
+        if (id == R.id.setting) {
             return true;
         }
         return super.onOptionsItemSelected(item);
+
+    }*/
+    public boolean onOptionsItemSelected(MenuItem item){
+
+        switch (item.getItemId()){
+            case R.id.SettingsOption:
+                Intent intent =new Intent(this ,Setting.class );
+                this.startActivity(intent);
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
+
+        }
+        return true;
+
+
     }
+    public void settingView(View view) {
+        Intent intent = new Intent(this, Setting.class);
+        startActivity(intent);
+    }
+
 
     public void cabinView(View view) {
         Intent intent = new Intent(this, Cabin.class);

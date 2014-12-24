@@ -1,7 +1,11 @@
+<!--
+
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MyActivity" >
-    <item android:id="@+id/action_settings"
+
+
+    <item android:id="@+id/action_changeCurrency"
         android:title="@string/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never" />
@@ -12,3 +16,17 @@
         android:title="@string/menu_settings"
         android:icon="@android:drawable/ic_menu_preferences"/>
 </menu>
+
+-->
+    <menu
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MyActivity" >
+
+        <item
+            android:id="@+id/SettingsOption"
+            android:title="Settings"
+
+            />
+
+    </menu>
