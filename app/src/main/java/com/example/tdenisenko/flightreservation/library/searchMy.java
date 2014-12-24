@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -21,6 +22,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.tdenisenko.flightreservation.FlightReservation.CustomOnItemSelectedListener;
 import com.example.tdenisenko.flightreservation.FlightReservation.RegisteredUser;
 import com.example.tdenisenko.flightreservation.FlightReservation.Setting;
 import com.example.tdenisenko.flightreservation.FlightReservation.Settings;
@@ -31,6 +33,7 @@ import com.example.tdenisenko.flightreservation.login.SignUPActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 
 
@@ -50,6 +53,9 @@ public class searchMy extends Activity {
     private Button flights;
     private Button login;
     Calendar myCalendar = Calendar.getInstance();
+
+    private Date depDate = null;
+    private Date arrDate = null;
 
     //public boolean isAdmin = false;
     //public String username = "";
@@ -85,8 +91,6 @@ public class searchMy extends Activity {
 
     };
 
-
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
@@ -120,7 +124,7 @@ public class searchMy extends Activity {
         spinner4.setAdapter(adapter4);
 
         // Spinner item selection Listener
-        addListenerOnSpinnerItemSelection();
+        //addListenerOnSpinnerItemSelection();
 
         textView1.setOnClickListener(new View.OnClickListener() {
 
@@ -142,13 +146,82 @@ public class searchMy extends Activity {
                         myCalendar.get(Calendar.DAY_OF_MONTH)).show();
             }
         });
+
+        spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            public void onItemSelected(AdapterView<?> parentView,
+                                       View selectedItemView, int position, long id) {
+                if (spinner2.getSelectedItemPosition() != 0 || spinner3.getSelectedItemPosition() != 0) {
+                    Toast.makeText(getApplicationContext(),
+                            "Children and babies can't go alone",
+                            Toast.LENGTH_LONG).show();
+                    spinner1.setSelection(1);
+                } else {
+                    spinner1.setSelection(position);
+                }
+            }
+
+            public void onNothingSelected(AdapterView<?> arg0) {// do nothing
+            }
+
+        });
+
+        spinner2.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            public void onItemSelected(AdapterView<?> parentView,
+                                       View selectedItemView, int position, long id) {
+                if (spinner1.getSelectedItemPosition() == 0) {
+                    Toast.makeText(getApplicationContext(),
+                            "Children can't go alone",
+                            Toast.LENGTH_LONG).show();
+                    spinner2.setSelection(0);
+                } else {
+                    spinner2.setSelection(position);
+                }
+            }
+
+            public void onNothingSelected(AdapterView<?> arg0) {// do nothing
+            }
+
+        });
+
+        spinner3.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            public void onItemSelected(AdapterView<?> parentView,
+                                       View selectedItemView, int position, long id) {
+                if (spinner1.getSelectedItemPosition() == 0) {
+                    Toast.makeText(getApplicationContext(),
+                            "Babies can't go alone",
+                            Toast.LENGTH_LONG).show();
+                    spinner3.setSelection(0);
+                } else {
+                    spinner3.setSelection(position);
+                }
+            }
+
+            public void onNothingSelected(AdapterView<?> arg0) {// do nothing
+            }
+
+        });
+
+        spinner4.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            public void onItemSelected(AdapterView<?> parentView,
+                                       View selectedItemView, int position, long id) {
+                spinner4.setSelection(position);
+            }
+
+            public void onNothingSelected(AdapterView<?> arg0) {// do nothing
+            }
+
+        });
     }
     // Add spinner data
-    public void addListenerOnSpinnerItemSelection(){
-        /*spinner1.setOnItemSelectedListener(new CustomOnItemSelectedListener());
+    /*public void addListenerOnSpinnerItemSelection(){
+        spinner1.setOnItemSelectedListener(new CustomOnItemSelectedListener());
         spinner2.setOnItemSelectedListener(new CustomOnItemSelectedListener());
         spinner3.setOnItemSelectedListener(new CustomOnItemSelectedListener());
-        spinner4.setOnItemSelectedListener(new CustomOnItemSelectedListener());*/
+        spinner4.setOnItemSelectedListener(new CustomOnItemSelectedListener());
     }
     //get the selected dropdown list value
     public void addListenerOnButton() {
@@ -156,22 +229,36 @@ public class searchMy extends Activity {
         spinner2 = (Spinner) findViewById(R.id.spinner2);
         spinner3 = (Spinner) findViewById(R.id.spinner3);
         spinner4 = (Spinner) findViewById(R.id.spinner4);
-    }
+    }*/
 
 
     private void updateLabel1() {
 
         String myFormat = "dd/MM/yy"; //In which you need put here
         SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.ENGLISH);
-
-        textView1.setText(sdf.format(myCalendar.getTime()));
+        depDate = myCalendar.getTime();
+        String time = sdf.format(depDate);
+        Date date = new Date();
+        String curTime = sdf.format(date);
+        if (myCalendar.getTime().compareTo(date) < 0 || (arrDate != null && arrDate.compareTo(depDate) < 0)) {
+            Toast.makeText(getApplicationContext(), "Please select a valid date.", Toast.LENGTH_LONG).show();
+        } else {
+            textView1.setText(time);
+        }
     }
     private void updateLabel2() {
 
         String myFormat = "dd/MM/yy"; //In which you need put here
         SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.ENGLISH);
-
-        textView2.setText(sdf.format(myCalendar.getTime()));
+        arrDate = myCalendar.getTime();
+        String time = sdf.format(arrDate);
+        Date date = new Date();
+        String curTime = sdf.format(date);
+        if (myCalendar.getTime().compareTo(date) < 0 || (depDate != null && arrDate.compareTo(depDate) < 0)) {
+            Toast.makeText(getApplicationContext(), "Please select a valid date.", Toast.LENGTH_LONG).show();
+        } else {
+            textView2.setText(time);
+        }
     }
 
     public void loginView(View view) {
