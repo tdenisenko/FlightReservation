@@ -2,6 +2,8 @@ package com.example.tdenisenko.flightreservation.library;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -11,14 +13,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.tdenisenko.flightreservation.FlightReservation.Settings;
 import com.example.tdenisenko.flightreservation.R;
 import com.example.tdenisenko.flightreservation.login.HomeActivity;
+import com.example.tdenisenko.flightreservation.login.LoginDataBaseAdapter;
+import com.example.tdenisenko.flightreservation.login.SignUPActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -38,7 +44,12 @@ public class searchMy extends Activity {
     private TextView textView2;
     private EditText departure;
     private EditText arrival;
+    private Button flights;
+    private Button login;
     Calendar myCalendar = Calendar.getInstance();
+
+    Button btnSignIn,btnSignUp;
+    LoginDataBaseAdapter loginDataBaseAdapter;
 
     DatePickerDialog.OnDateSetListener date1 = new DatePickerDialog.OnDateSetListener() {
 
@@ -67,6 +78,8 @@ public class searchMy extends Activity {
 
     };
 
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
@@ -80,6 +93,8 @@ public class searchMy extends Activity {
         textView2 = (TextView)findViewById(R.id.arrdateTextView);
         departure = (EditText) findViewById(R.id.departure_editText);
         arrival = (EditText) findViewById(R.id.arrival_editText);
+        login = (Button) findViewById(R.id.loginButton);
+        flights = (Button) findViewById(R.id.flights);
 
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.spinner1, android.R.layout.simple_spinner_item);
@@ -156,8 +171,79 @@ public class searchMy extends Activity {
     }
 
     public void loginView(View view) {
-        Intent intent = new Intent(this, HomeActivity.class);
-        startActivity(intent);
+        //Intent intent = new Intent(this, HomeActivity.class);
+        //startActivity(intent);
+        if (login.getText().toString().compareTo("Login") == 0) {
+            loginDataBaseAdapter = new LoginDataBaseAdapter(this);
+            loginDataBaseAdapter = loginDataBaseAdapter.open();
+            signIn(login);
+        } else {
+            Toast.makeText(getApplicationContext(), "Logged out", Toast.LENGTH_LONG).show();
+            login.setText("Login");
+            flights.setVisibility(View.GONE);
+        }
+
+        //loginDataBaseAdapter.close();
+    }
+    public void signIn(View V)
+    {
+        final Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.login);
+        dialog.setTitle("Login");
+
+        // get the Refferences of views
+        final  EditText editTextUserName=(EditText)dialog.findViewById(R.id.editTextUserNameToLogin);
+        final  EditText editTextPassword=(EditText)dialog.findViewById(R.id.editTextPasswordToLogin);
+
+        Button btnSignIn=(Button)dialog.findViewById(R.id.buttonSignIn);
+        Button btnSignUp=(Button)dialog.findViewById(R.id.buttonSignUp);
+
+        dialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+            @Override
+            public void onCancel(DialogInterface dialog) {
+                //Toast.makeText(getApplicationContext(), "done", Toast.LENGTH_LONG).show();
+                loginDataBaseAdapter.close();
+            }
+        });
+
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+
+                /// Create Intent for SignUpActivity  and Start The Activity
+                Intent intentSignUP=new Intent(getApplicationContext(),SignUPActivity.class);
+                startActivity(intentSignUP);
+            }
+        });
+
+        // Set On ClickListener
+        btnSignIn.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                // get The User name and Password
+                String userName=editTextUserName.getText().toString();
+                String password=editTextPassword.getText().toString();
+
+                // fetch the Password form database for respective user name
+                String storedPassword=loginDataBaseAdapter.getSingleEntry(userName);
+
+                // check if the Stored password matches with  Password entered by user
+                if(password.equals(storedPassword))
+                {
+                    Toast.makeText(getApplicationContext(), "Congrats: Login Successfull", Toast.LENGTH_LONG).show();
+                    loginDataBaseAdapter.close();
+                    login.setText("Logout");
+                    flights.setVisibility(View.VISIBLE);
+                    dialog.dismiss();
+                }
+                else
+                {
+                    Toast.makeText(getApplicationContext(), "User Name or Password does not match", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+        dialog.show();
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

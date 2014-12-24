@@ -252,4 +252,13 @@
         android:padding="10dp"
         tools:context=".searchMy" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flights"
+        android:id="@+id/flights"
+        android:layout_alignTop="@+id/searchButton"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
 </RelativeLayout>
