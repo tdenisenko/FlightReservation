@@ -1,0 +1,282 @@
+package com.example.tdenisenko.flightreservation.FlightReservation;
+
+import java.util.Date;
+import java.util.Scanner;
+import java.util.concurrent.ExecutionException;
+
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.BasicHttpParams;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import android.annotation.TargetApi;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.os.Build;
+import android.os.Bundle;
+import android.support.v4.app.NavUtils;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.EditText;
+import android.widget.TableRow;
+import android.widget.TextView;
+
+public class ExchangeRates extends Activity {
+	static Scanner inp;
+	static int TRY_AMOUNT = 1;
+	static double USD_RATE;
+	static double EUR_RATE;
+	static double JPY_RATE;
+	final Context context = this;
+	private TableRow tr;
+	private TextView result;
+	private TextView tryText;
+	private TextView usdText;
+	private TextView eurText;
+	private TextView jpyText;
+	private TextView currentDate;
+	double temp;
+
+	HttpClient httpclient = new DefaultHttpClient(new BasicHttpParams());
+	HttpPost httppost = new HttpPost("http://someJSONUrl/jsonWebService");
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setUSD();
+		setEUR();
+		setJPY();
+		setContentView(R.layout.activity_exchange_rates);
+		tryText = (TextView) findViewById(R.id.try_equals);
+		tryText.setText(TRY_AMOUNT + " TRY = ?");
+		
+		currentDate = (TextView) findViewById(R.id.currentDate);
+		Date d = new Date();
+		currentDate.setText(d.toString());
+		setUSD2();
+		setEUR2();
+		setJPY2();
+		tr = (TableRow) findViewById(R.id.tableRow1);
+		// add button listener
+				tr.setOnClickListener(new OnClickListener() {
+
+					@Override
+					public void onClick(View arg0) {
+
+						// get prompts.xml view
+						LayoutInflater li = LayoutInflater.from(context);
+						View promptsView = li.inflate(R.layout.prompts, null);
+
+						AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+								context);
+
+						// set prompts.xml to alertdialog builder
+						alertDialogBuilder.setView(promptsView);
+
+						final EditText userInput = (EditText) promptsView
+								.findViewById(R.id.editTextDialogUserInput);
+
+						// set dialog message
+						alertDialogBuilder
+								.setCancelable(false)
+								.setPositiveButton("OK",
+										new DialogInterface.OnClickListener() {
+											public void onClick(DialogInterface dialog,
+													int id) {
+												// get user input and set it to result
+												// edit text
+												if (!userInput.getText().toString()
+														.isEmpty()) {
+													TRY_AMOUNT = Integer
+															.parseInt(userInput
+																	.getText()
+																	.toString());
+													tryText.setText(TRY_AMOUNT
+															+ " TRY = ?");
+													temp = TRY_AMOUNT / USD_RATE;
+													result = (TextView) findViewById(R.id.usd_to_try);
+													result.setText(String.format(
+															"%.2f", temp));
+													temp = TRY_AMOUNT / EUR_RATE;
+													result = (TextView) findViewById(R.id.eur_to_try);
+													result.setText(String.format(
+															"%.2f", temp));
+													temp = TRY_AMOUNT / JPY_RATE;
+													result = (TextView) findViewById(R.id.jpy_to_try);
+													result.setText(String.format(
+															"%.2f", temp));
+												}
+											}
+										})
+								.setNegativeButton("Cancel",
+										new DialogInterface.OnClickListener() {
+											public void onClick(DialogInterface dialog,
+													int id) {
+												dialog.cancel();
+											}
+										});
+
+						// create alert dialog
+						AlertDialog alertDialog = alertDialogBuilder.create();
+
+						// show it
+						alertDialog.show();
+
+					}
+				});
+	}
+	
+	private void setUSD() {
+		JSONObject jsonObject = null;
+		try {
+			jsonObject = new Json()
+					.execute(
+							"http://rate-exchange.appspot.com/currency?from=USD&to=TRY")
+					.get();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} catch (ExecutionException e) {
+			e.printStackTrace();
+		}
+		String json = jsonObject.toString();
+		try {
+			USD_RATE = Double.parseDouble(jsonObject.getString("rate"));
+		} catch (NumberFormatException e) {
+			USD_RATE = 0;
+			e.printStackTrace();
+		} catch (JSONException e) {
+			USD_RATE = 0;
+			e.printStackTrace();
+		}
+
+		//setContentView(R.layout.activity_exchange_rates);
+		
+	}
+	
+	private void setUSD2() {
+		usdText = (TextView) findViewById(R.id.usd_text);
+		usdText.setText("1 USD = " + USD_RATE + " TRY");
+		result = (TextView) findViewById(R.id.usd_to_try);
+		temp = TRY_AMOUNT / USD_RATE;
+		result.setText(String.format("%.4f", temp));
+
+		
+	}
+	
+	private void setEUR() {
+		JSONObject jsonObject = null;
+		try {
+			jsonObject = new Json()
+					.execute(
+							"http://rate-exchange.appspot.com/currency?from=EUR&to=TRY")
+					.get();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} catch (ExecutionException e) {
+			e.printStackTrace();
+		}
+		String json = jsonObject.toString();
+		try {
+			EUR_RATE = Double.parseDouble(jsonObject.getString("rate"));
+		} catch (NumberFormatException e) {
+			EUR_RATE = 0;
+			e.printStackTrace();
+		} catch (JSONException e) {
+			EUR_RATE = 0;
+			e.printStackTrace();
+		}
+
+		//setContentView(R.layout.activity_exchange_rates);
+		
+	}
+	
+	private void setEUR2() {
+		eurText = (TextView) findViewById(R.id.jpy_text);
+		eurText.setText("1 EUR = " + EUR_RATE + " TRY");
+		//tr = (TableRow) findViewById(R.id.tableRow3);
+		result = (TextView) findViewById(R.id.eur_to_try);
+		temp = TRY_AMOUNT / EUR_RATE;
+		result.setText(String.format("%.4f", temp));
+
+		
+	}
+	
+	private void setJPY() {
+		JSONObject jsonObject = null;
+		try {
+			jsonObject = new Json()
+					.execute(
+							"http://rate-exchange.appspot.com/currency?from=JPY&to=TRY")
+					.get();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} catch (ExecutionException e) {
+			e.printStackTrace();
+		}
+		String json = jsonObject.toString();
+		try {
+			JPY_RATE = Double.parseDouble(jsonObject.getString("rate"));
+		} catch (NumberFormatException e) {
+			JPY_RATE = 0;
+			e.printStackTrace();
+		} catch (JSONException e) {
+			JPY_RATE = 0;
+			e.printStackTrace();
+		}
+
+		//setContentView(R.layout.activity_exchange_rates);
+		
+	}
+	
+	private void setJPY2() {
+		eurText = (TextView) findViewById(R.id.jpy_text);
+		eurText.setText("1 JPY = " + JPY_RATE + " TRY");
+		//tr = (TableRow) findViewById(R.id.tableRow3);
+		result = (TextView) findViewById(R.id.jpy_to_try);
+		temp = TRY_AMOUNT / JPY_RATE;
+		result.setText(String.format("%.4f", temp));
+
+		
+	}
+
+
+	// Set up the {@link android.app.ActionBar}, if the API is available.
+
+	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
+	private void setupActionBar() {
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+			getActionBar().setDisplayHomeAsUpEnabled(true);
+		}
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.display_message, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			// This ID represents the Home or Up button. In the case of this
+			// activity, the Up button is shown. Use NavUtils to allow users
+			// to navigate up one level in the application structure. For
+			// more details, see the Navigation pattern on Android Design:
+			//
+			// http://developer.android.com/design/patterns/navigation.html#up-vs-back
+			//
+			NavUtils.navigateUpFromSameTask(this);
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+}

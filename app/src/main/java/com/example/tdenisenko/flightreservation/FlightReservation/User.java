@@ -7,7 +7,7 @@ import android.widget.Toast;
  * Created by SULUNGOZ on 13.12.2014.
  * Edited by Karaakin on 16.12.2014.
  */
-public class User extends registerUser{
+public class User {
 
     String sessionID;
     String ipLocation;
@@ -16,14 +16,14 @@ public class User extends registerUser{
     CharSequence text;
     int duration = Toast.LENGTH_SHORT;
 
-    public User(Settings setting, String sessionID, String ipLocation) {
+    /*public User(Settings setting, String sessionID, String ipLocation) {
         this.setting = setting;
         this.sessionID = sessionID;
         this.ipLocation = ipLocation;
-    }
+    }*/
 
     private void register(){
-        if(userID==null){
+        /*if(userID==null){
             //do something;
         }
         else{
@@ -31,7 +31,7 @@ public class User extends registerUser{
             text="You've already registered";
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
-        }
+        }*/
 
     }
 

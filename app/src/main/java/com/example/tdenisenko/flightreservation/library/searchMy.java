@@ -21,6 +21,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.tdenisenko.flightreservation.FlightReservation.RegisteredUser;
 import com.example.tdenisenko.flightreservation.FlightReservation.Setting;
 import com.example.tdenisenko.flightreservation.FlightReservation.Settings;
 import com.example.tdenisenko.flightreservation.R;
@@ -49,6 +50,10 @@ public class searchMy extends Activity {
     private Button flights;
     private Button login;
     Calendar myCalendar = Calendar.getInstance();
+
+    //public boolean isAdmin = false;
+    //public String username = "";
+    RegisteredUser registeredUser;
 
     Button btnSignIn,btnSignUp;
     LoginDataBaseAdapter loginDataBaseAdapter;
@@ -177,6 +182,7 @@ public class searchMy extends Activity {
             loginDataBaseAdapter = loginDataBaseAdapter.open();
             signIn(login);
         } else {
+            registeredUser = null;
             Toast.makeText(getApplicationContext(), "Logged out", Toast.LENGTH_LONG).show();
             login.setText("Login");
             flights.setVisibility(View.GONE);
@@ -207,8 +213,6 @@ public class searchMy extends Activity {
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                // TODO Auto-generated method stub
-
                 /// Create Intent for SignUpActivity  and Start The Activity
                 Intent intentSignUP=new Intent(getApplicationContext(),SignUPActivity.class);
                 startActivity(intentSignUP);
@@ -229,7 +233,14 @@ public class searchMy extends Activity {
                 // check if the Stored password matches with  Password entered by user
                 if(password.equals(storedPassword))
                 {
-                    Toast.makeText(getApplicationContext(), "Congrats: Login Successfull", Toast.LENGTH_LONG).show();
+                    registeredUser = new RegisteredUser(userName, password);
+                    if (userName.equals("admin")) {
+                        registeredUser.setAdmin(true);
+                        Toast.makeText(getApplicationContext(), "Welcome Administrator!", Toast.LENGTH_LONG).show();
+                    } else {
+                        registeredUser.setAdmin(false);
+                        Toast.makeText(getApplicationContext(), "Login Successful!", Toast.LENGTH_LONG).show();
+                    }
                     loginDataBaseAdapter.close();
                     login.setText("Logout");
                     flights.setVisibility(View.VISIBLE);
