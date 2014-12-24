@@ -77,6 +77,10 @@ public class    MainActivity extends Activity {
         startActivity(intent);
     }
 
+    public void FlightsView(View view) {
+        Intent intent = new Intent(this, Flights.class);
+        startActivity(intent);
+    }
 
     public void cabinView(View view) {
         Intent intent = new Intent(this, Cabin.class);

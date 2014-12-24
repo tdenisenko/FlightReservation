@@ -1,0 +1,67 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/images"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+
+    >
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:id="@+id/flights_Location"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+
+                />
+
+    <Spinner
+
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/location_spinner1"
+    android:spinnerMode="dropdown"
+    android:gravity="left"
+    android:layout_weight="2"
+    android:visibility="visible"
+    android:layout_toEndOf="@id/flights_Location"
+    android:layout_marginTop="15dp"
+    android:layout_toRightOf="@+id/Currency"
+    android:layout_alignBottom="@+id/flights_Location"
+
+        />
+
+/>   <Spinner
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/location_spinner2"
+            android:spinnerMode="dropdown"
+            android:gravity="left"
+            android:layout_weight="2"
+            android:visibility="visible"
+            android:layout_toEndOf="@id/flights_Location"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/Currency"
+            android:layout_alignBottom="@+id/flights_Location"
+
+            />
+
+
+        </TableRow>
+
+
+        </TableLayout>
+
+
+    </RelativeLayout>

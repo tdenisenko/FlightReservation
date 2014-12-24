@@ -1,22 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:background="@drawable/images"
+    android:visibility="visible">
+
+    <TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Currency"
+        android:id="@+id/Currency"
+        android:layout_alignEnd="@+id/Language"
+        android:padding="20dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="false"
 
 
-    android:gravity="center_horizontal">
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerr1"
+        android:spinnerMode="dropdown"
+        android:gravity="left"
+        android:layout_weight="2"
+        android:visibility="visible"
+        android:layout_toEndOf="@id/Currency"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/Currency"
+        android:layout_alignBottom="@+id/Country"
+
+
+        />
+    </TableRow>
+
+    <TableRow>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Change Currency"
-        android:id="@+id/setting"
-        android:gravity="center_vertical"
+        android:text="Prefered Language"
+        android:id="@+id/Language"
+
         android:padding="20dp"
+        android:layout_below="@+id/Currency"
+        android:layout_alignParentStart="true"
 
         />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerr2"
+        android:spinnerMode="dropdown"
+        android:gravity="left"
+        android:layout_weight="2"
+        android:visibility="visible"
+        android:layout_toEndOf="@id/Currency"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/Language"
+        android:layout_alignBottom="@+id/Language" />
+    </TableRow>
 
-</RelativeLayout>
+    <TableRow>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Country"
+            android:id="@+id/Country"
+
+            android:padding="20dp"
+            android:layout_alignEnd="@+id/Language"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="false"
+            android:layout_below="@+id/Language"
+
+            />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerr3"
+        android:spinnerMode="dropdown"
+        android:gravity="left"
+        android:layout_weight="2"
+        android:visibility="visible"
+        android:layout_toEndOf="@id/Country"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/Country"
+        android:layout_alignBottom="@+id/Country" />
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+            android:text="Units"
+            android:id="@+id/IsEmperial"
+            android:gravity="center_vertical"
+            android:padding="20dp"
+            android:layout_alignEnd="@+id/Language"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="false"
+            android:layout_below="@+id/Country"
+
+            />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerr4"
+        android:spinnerMode="dropdown"
+        android:gravity="left"
+        android:layout_weight="2"
+        android:visibility="visible"
+        android:layout_toEndOf="@id/IsEmperial"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/IsEmperial"
+        android:layout_alignBottom="@+id/IsEmperial"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="false"
+        android:layout_gravity="center_vertical|top" />
+
+
+
+
+    </TableRow>
+<TableRow>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Set Currency"
+        android:id="@+id/SetCurrency"
+        android:gravity="center_vertical"
+        android:padding="20dp"
+        android:layout_alignEnd="@+id/Language"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="false"
+        android:layout_below="@+id/IsEmperial"
+        android:visibility="gone"
+        />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerr5"
+        android:spinnerMode="dropdown"
+        android:gravity="left"
+        android:layout_weight="2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/spinnerr4"
+        android:layout_toRightOf="@+id/SetCurrency"
+        android:layout_alignBottom="@+id/SetCurrency"
+        android:visibility="gone"
+        />
+
+
+
+
+</TableRow>
+
+
+</TableLayout>

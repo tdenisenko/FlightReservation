@@ -259,6 +259,9 @@
         android:id="@+id/flights"
         android:layout_alignTop="@+id/searchButton"
         android:layout_centerHorizontal="true"
-        android:visibility="gone" />
+        android:onClick="FlightsView"
+        android:visibility="visible"
+        />
+
 
 </RelativeLayout>

@@ -3,6 +3,39 @@
 
     <string name="app_name">FlightReservation</string>
     <string name="hello_world">Hello world!</string>
+    <string name="Currency">Settings</string>
+    <string-array name="spinnerr1">
+    <item>EUR</item>
+    <item>TRY</item>
+    <item>USB</item>
+    </string-array>
+    <string name="Language">Settings</string>
+    <string-array name="spinnerr2">
+        <item>Türkçe</item>
+        <item>English</item>
+    </string-array>
+    <string name="Units">Settings</string>
+    <string-array name="spinnerr4">
+        <item>Imperial</item>
+        <item>Metric</item>
+        </string-array>
+    <string name="Counrty">Settings</string>
+    <string-array name="spinnerr3">
+        <item>France</item>
+        <item>Germany</item>
+        <item>Italy</item>
+        <item>Norway</item>
+        <item>Spain</item>
+        <item>Sweden</item>
+        <item>Turkey</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+    </string-array>
+    <string name="SetCurrency">Settings</string>
+    <string-array name="spinnerr5">
+        <item>Sourse 1</item>
+        <item>Sourse 2</item>
+    </string-array>
     <string name="action_settings">Settings</string>
 \   <string-array name="spinner1">
         <item>0</item>
