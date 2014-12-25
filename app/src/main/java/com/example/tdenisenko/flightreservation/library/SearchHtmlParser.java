@@ -33,7 +33,7 @@ public class SearchHtmlParser extends Activity {
     static String DEPARTUREARRIVALTIME = "departureArrivalTime";
     static String ARRIVALDEPARTURETIME = "arrivalDepartureTime";
     static String DEPARTUREARRIVALPLACE = "departureArrivalPlace";
-    static String ARRIVALDEPARTUREPLACE = "arrivalDepartureplace";
+    static String ARRIVALDEPARTUREPLACE = "arrivalDeparturePlace";
     static String SEATS = "seats";
     static String KABINCLASS = "kabinclass";
     static String PRICE = "price";
@@ -68,50 +68,6 @@ public class SearchHtmlParser extends Activity {
             mProgressDialog.show();
         }
 
-        /*@Override
-        protected Void doInBackground(Void... params) {
-            // Create an array
-            arraylist = new ArrayList<HashMap<String, String>>();
-
-            try {
-                // Connect to the Website URL
-                Document doc = Jsoup.connect(url).get();
-                // Identify Table Class "worldpopulation"
-                for (Element table : doc.select("table[class=worldpopulation]")) {
-
-                    // Identify all the table row's(tr)
-                    for (Element row : table.select("tr:gt(0)")) {
-                        HashMap<String, String> map = new HashMap<String, String>();
-
-                        // Identify all the table cell's(td)
-                        Elements tds = row.select("td");
-
-                        // Identify all img src's
-                        Elements imgSrc = row.select("img[src]");
-                        // Get only src from img src
-                        String imgSrcStr = imgSrc.attr("src");
-
-                        // Retrive Jsoup Elements
-                        // Get the first td
-                        map.put("rank", tds.get(0).text());
-                        // Get the second td
-                        map.put("country", tds.get(1).text());
-                        // Get the third td
-                        map.put("population", tds.get(2).text());
-                        // Get the image src links
-                        map.put("flag", imgSrcStr);
-                        // Set all extracted Jsoup Elements into the array
-                        arraylist.add(map);
-                    }
-                }
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-
-            return null;
-        }*/
-
         @Override
         protected Void doInBackground(Void... params) {
             // Create an array
@@ -128,20 +84,37 @@ public class SearchHtmlParser extends Activity {
                         HashMap<String, String> map = new HashMap<String, String>();
 
                         // Identify all the table cell's(td)
-                        Elements divs = row.select("div").select("div");
+                        //Elements divs = row.select("div").select("div");
 
+                        String price = row.attr("price");
+
+                        Elements divs = row.select("div");
+                        String airlineCompany = divs.select("div").select("img").attr("alt");
+                        String flightId = divs.select("div:eq(1)").text();
+                        String depTime = divs.select("div:eq(2)").select("span[name=DepartureTime]").text();
+                        String arrTime = divs.select("div:eq(2)").select("span[name=ArrivalTime]").text();
+                        String depAirport = divs.select("div:eq(3)").select("span[name=DepartureAirportName]").text();
+                        String arrAirport = divs.select("div:eq(3)").select("span[name=ArrivalAirportName]").text();
+                        String classes = divs.select("div:eq(4)").select("span").text();
+
+                        //Log.d("dogrumu", arrAirport);
                         // Identify all img src's
                         Elements imgSrc = row.select("img[src]");
                         // Get only src from img src
                         String imgSrcStr = imgSrc.attr("src");
 
                         // Retrive Jsoup Elements
+                        map.put("departureArrivalTime", depTime);
+                        map.put("arrivalDepartureTime", arrTime);
+                        map.put("departureArrivalPlace", depAirport);
+                        map.put("arrivalDeparturePlace", arrAirport);
+                        map.put("kabinclass", classes);
                         // Get the first td
-                        map.put("rank", divs.get(0).text());
+                        map.put("price", price);
                         // Get the second td
-                        map.put("country", divs.get(1).text());
+                        map.put("airlines", airlineCompany);//divs.get(1).text());
                         // Get the third td
-                        map.put("population", divs.get(2).text());
+                        map.put("flightNumber", flightId);//divs.get(2).text());
                         // Get the image src links
                         map.put("flag", imgSrcStr);
                         // Set all extracted Jsoup Elements into the array
@@ -155,74 +128,6 @@ public class SearchHtmlParser extends Activity {
 
             return null;
         }
-/*
-        @Override
-        protected Void doInBackground(Void... params) {
-            // Create an array
-            arraylist = new ArrayList<HashMap<String, String>>();
-            Log.d("doInBackground", "started");
-
-            try {
-                // Connect to the Website URL
-                //org.jsoup.Connection cnt = Jsoup.connect(url);
-                //Thread.sleep(15000);
-                //Document doc = cnt.get();
-                Document doc = Jsoup.connect(url).get();
-                Thread.sleep(3000);
-
-                //Element list = doc.select("div[class=flight-list-in]");
-                // Identify Table Class "worldpopulation"
-                Elements table2 = doc.select("ul[id=lstFromFlights]");
-                String asd = table2.get(0).text();
-                Log.d("noluyor", asd);
-                table2 = table2.select("li:gt(0)");
-                String attr2 = table2.attr("price");
-                Log.d("noluyor", attr2);
-                for (Element table : doc.select("ul[id=lstFromFlights]")) {
-
-                    HashMap<String, String> map = new HashMap<String, String>();
-                    //Elements props = table.select("li:gt(0)");
-                    Log.d("asd", table.text());
-
-                    String price = table.select("li").attr("price");
-                    Log.d("asd", table.select("li").text());
-                    //String departuretime = table.attr("departuretime");
-                    //props = table.select("div[class=row-group]");
-                    Elements logo = table.select("img[name=AirlineLogo");
-                    String airlineCompany = logo.attr("alt");
-                    String imgSrc = logo.attr("src");
-                    String flightNo = table.select("div[class=row-group]").get(1).text();
-
-                    // Identify all the table cell's(td)
-                    //Elements tds = row.select("td");
-
-                    // Identify all img src's
-                    //Elements imgSrc = row.select("img[src]");
-                    // Get only src from img src
-                    //String imgSrcStr = imgSrc.attr("src");
-
-                    // Retrive Jsoup Elements
-                    // Get the first td
-                    map.put("rank", price);
-                    // Get the second td
-                    map.put("country", airlineCompany);
-                    // Get the third td
-                    map.put("population", flightNo);
-                    // Get the image src links
-                    map.put("flag", imgSrc);
-                    // Set all extracted Jsoup Elements into the array
-                    arraylist.add(map);
-                    //}
-                }
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-
-            return null;
-        }*/
 
         @Override
         protected void onPostExecute(Void result) {

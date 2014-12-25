@@ -56,7 +56,7 @@ public class SingleItemView extends Activity {
 		TextView txtdepartureArrivalTime = (TextView) findViewById(R.id.departure_arrival_time);
         TextView txtarrivalDepartureTime = (TextView) findViewById(R.id.arrival_departure_time);
         TextView txtdepartureArrivalPlace = (TextView) findViewById(R.id.departure_arrival_place);
-        TextView txtarrivalDeparturePlace = (TextView) findViewById(R.id.departure_arrival_place);
+        TextView txtarrivalDeparturePlace = (TextView) findViewById(R.id.arrival_departure_place);
         TextView txtseats = (TextView) findViewById(R.id.seat);
         TextView txtkabinClass = (TextView) findViewById(R.id.Class);
         TextView txtprice = (TextView) findViewById(R.id.price);

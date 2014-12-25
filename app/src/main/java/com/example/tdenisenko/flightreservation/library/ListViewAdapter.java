@@ -90,7 +90,7 @@ public class ListViewAdapter extends BaseAdapter {
         departureArrivalTime.setText(resultp.get(SearchHtmlParser.DEPARTUREARRIVALTIME));
         arrivalDepartureTime.setText(resultp.get(SearchHtmlParser.ARRIVALDEPARTURETIME));
         departureArrivalPlace.setText(resultp.get(SearchHtmlParser.DEPARTUREARRIVALPLACE));
-        arrivalDeparturePlace.setText(resultp.get(SearchHtmlParser.ARRIVALDEPARTURETIME));
+        arrivalDeparturePlace.setText(resultp.get(SearchHtmlParser.ARRIVALDEPARTUREPLACE));
         seats.setText(resultp.get(SearchHtmlParser.SEATS));
         kabinClass.setText(resultp.get(SearchHtmlParser.KABINCLASS));
         price.setText(resultp.get(SearchHtmlParser.PRICE));
