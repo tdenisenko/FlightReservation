@@ -25,7 +25,7 @@
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinnerr1"
+        android:id="@+id/currencySpinner"
         android:spinnerMode="dropdown"
         android:gravity="left"
         android:layout_weight="2"
@@ -56,7 +56,7 @@
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinnerr2"
+        android:id="@+id/langSpinner"
         android:spinnerMode="dropdown"
         android:gravity="left"
         android:layout_weight="2"
@@ -87,7 +87,7 @@
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinnerr3"
+        android:id="@+id/countrySpinner"
         android:spinnerMode="dropdown"
         android:gravity="left"
         android:layout_weight="2"
@@ -120,7 +120,7 @@
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinnerr4"
+        android:id="@+id/unitsSpinner"
         android:spinnerMode="dropdown"
         android:gravity="left"
         android:layout_weight="2"
@@ -138,7 +138,8 @@
 
 
     </TableRow>
-<TableRow>
+<TableRow android:id="@+id/setcurrencyrow"
+    android:visibility="gone">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -152,20 +153,18 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="false"
         android:layout_below="@+id/IsEmperial"
-        android:visibility="gone"
         />
     <Spinner
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinnerr5"
+        android:id="@+id/setcurSpinner"
         android:spinnerMode="dropdown"
         android:gravity="left"
         android:layout_weight="2"
         android:layout_marginTop="15dp"
-        android:layout_below="@+id/spinnerr4"
+        android:layout_below="@+id/unitsSpinner"
         android:layout_toRightOf="@+id/SetCurrency"
         android:layout_alignBottom="@+id/SetCurrency"
-        android:visibility="gone"
         />
 
 

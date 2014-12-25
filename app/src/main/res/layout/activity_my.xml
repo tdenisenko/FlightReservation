@@ -259,7 +259,7 @@
         android:id="@+id/flights"
         android:layout_alignTop="@+id/searchButton"
         android:layout_centerHorizontal="true"
-        android:onClick="FlightsView"
+        android:onClick="flightsView"
         android:visibility="visible"
         />
 

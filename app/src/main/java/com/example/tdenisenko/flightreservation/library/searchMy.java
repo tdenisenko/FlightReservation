@@ -451,8 +451,11 @@ public class searchMy extends Activity {
 
         }
         return true;
+    }
 
-
+    public void flightsView(View view) {
+        Intent intent = new Intent(this, Flights.class);
+        startActivity(intent);
     }
 
 
