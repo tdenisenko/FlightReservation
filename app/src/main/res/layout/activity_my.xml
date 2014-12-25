@@ -227,12 +227,11 @@
         android:layout_height="wrap_content"
         android:text="Search"
         android:id="@+id/searchButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/spinner4"
+        android:onClick="openSiteView"
+        android:layout_alignTop="@+id/loginButton"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="50dp"
-        android:layout_marginBottom="25dp"
-        android:onClick="openSiteView" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -242,7 +241,7 @@
         android:layout_alignStart="@+id/cabin_textView"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginBottom="25dp"
         android:onClick="loginView" />
     <TextView
@@ -257,11 +256,10 @@
         android:layout_height="wrap_content"
         android:text="Flights"
         android:id="@+id/flights"
+        android:onClick="flightsView"
         android:layout_alignTop="@+id/searchButton"
         android:layout_centerHorizontal="true"
-        android:onClick="flightsView"
-        android:visibility="visible"
-        />
+        android:visibility="gone" />
 
 
 </RelativeLayout>

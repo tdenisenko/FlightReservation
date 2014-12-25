@@ -444,7 +444,7 @@ public class searchMy extends Activity {
         switch (item.getItemId()){
             case R.id.SettingsOption:
                 Intent intent =new Intent(this ,Setting.class );
-                this.startActivity(intent);
+                startActivity(intent);
                 break;
             default:
                 return super.onOptionsItemSelected(item);

@@ -4,23 +4,23 @@
     <string name="app_name">FlightReservation</string>
     <string name="hello_world">Hello world!</string>
     <string name="Currency">Settings</string>
-    <string-array name="spinnerr1">
+    <string-array name="currencySpinner">
     <item>EUR</item>
     <item>TRY</item>
     <item>USB</item>
     </string-array>
     <string name="Language">Settings</string>
-    <string-array name="spinnerr2">
+    <string-array name="langSpinner">
         <item>Türkçe</item>
         <item>English</item>
     </string-array>
     <string name="Units">Settings</string>
-    <string-array name="spinnerr4">
+    <string-array name="unitsSpinner">
         <item>Imperial</item>
         <item>Metric</item>
         </string-array>
-    <string name="Counrty">Settings</string>
-    <string-array name="spinnerr3">
+    <string name="Country">Settings</string>
+    <string-array name="countrySpinner">
         <item>France</item>
         <item>Germany</item>
         <item>Italy</item>
@@ -32,9 +32,9 @@
         <item>United States</item>
     </string-array>
     <string name="SetCurrency">Settings</string>
-    <string-array name="spinnerr5">
-        <item>Sourse 1</item>
-        <item>Sourse 2</item>
+    <string-array name="setcurSpinner">
+        <item>Source 1</item>
+        <item>Source 2</item>
     </string-array>
     <string name="action_settings">Settings</string>
 \   <string-array name="spinner1">
