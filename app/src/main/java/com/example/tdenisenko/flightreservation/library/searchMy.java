@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -324,6 +325,7 @@ public class searchMy extends Activity {
                     if (userName.equals("admin")) {
                         registeredUser.setAdmin(true);
                         Toast.makeText(getApplicationContext(), "Welcome Administrator!", Toast.LENGTH_LONG).show();
+
                     } else {
                         registeredUser.setAdmin(false);
                         Toast.makeText(getApplicationContext(), "Login Successful!", Toast.LENGTH_LONG).show();

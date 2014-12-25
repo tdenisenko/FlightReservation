@@ -6,20 +6,14 @@
     android:background="@drawable/images"
     android:visibility="visible">
 
-    <TableRow>
+    <TableRow android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Currency"
         android:id="@+id/Currency"
-        android:layout_alignEnd="@+id/Language"
-        android:padding="20dp"
-        android:layout_alignParentTop="false"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="false"
-
-
         />
 
     <Spinner
@@ -30,16 +24,13 @@
         android:gravity="left"
         android:layout_weight="2"
         android:visibility="visible"
-        android:layout_toEndOf="@id/Currency"
-        android:layout_marginTop="15dp"
-        android:layout_toRightOf="@+id/Currency"
-        android:layout_alignBottom="@+id/Country"
 
 
         />
     </TableRow>
 
-    <TableRow>
+    <TableRow android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,8 +38,6 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Prefered Language"
         android:id="@+id/Language"
-
-        android:padding="20dp"
         android:layout_below="@+id/Currency"
         android:layout_alignParentStart="true"
 
@@ -62,12 +51,12 @@
         android:layout_weight="2"
         android:visibility="visible"
         android:layout_toEndOf="@id/Currency"
-        android:layout_marginTop="15dp"
         android:layout_toRightOf="@+id/Language"
         android:layout_alignBottom="@+id/Language" />
     </TableRow>
 
-    <TableRow>
+    <TableRow android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -75,8 +64,6 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Country"
             android:id="@+id/Country"
-
-            android:padding="20dp"
             android:layout_alignEnd="@+id/Language"
             android:layout_alignParentTop="false"
             android:layout_alignParentStart="true"
@@ -93,13 +80,13 @@
         android:layout_weight="2"
         android:visibility="visible"
         android:layout_toEndOf="@id/Country"
-        android:layout_marginTop="15dp"
         android:layout_toRightOf="@+id/Country"
         android:layout_alignBottom="@+id/Country" />
 
     </TableRow>
 
-    <TableRow>
+    <TableRow android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -108,7 +95,6 @@
             android:text="Units"
             android:id="@+id/IsEmperial"
             android:gravity="center_vertical"
-            android:padding="20dp"
             android:layout_alignEnd="@+id/Language"
             android:layout_alignParentTop="false"
             android:layout_alignParentStart="true"
@@ -126,7 +112,6 @@
         android:layout_weight="2"
         android:visibility="visible"
         android:layout_toEndOf="@id/IsEmperial"
-        android:layout_marginTop="15dp"
         android:layout_toRightOf="@+id/IsEmperial"
         android:layout_alignBottom="@+id/IsEmperial"
         android:layout_alignParentTop="false"
@@ -139,7 +124,9 @@
 
     </TableRow>
 <TableRow android:id="@+id/setcurrencyrow"
-    android:visibility="gone">
+    android:visibility="gone"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -147,7 +134,6 @@
         android:text="Set Currency"
         android:id="@+id/SetCurrency"
         android:gravity="center_vertical"
-        android:padding="20dp"
         android:layout_alignEnd="@+id/Language"
         android:layout_alignParentTop="false"
         android:layout_alignParentStart="true"
@@ -161,7 +147,6 @@
         android:spinnerMode="dropdown"
         android:gravity="left"
         android:layout_weight="2"
-        android:layout_marginTop="15dp"
         android:layout_below="@+id/unitsSpinner"
         android:layout_toRightOf="@+id/SetCurrency"
         android:layout_alignBottom="@+id/SetCurrency"

@@ -88,7 +88,10 @@
             android:name=".library.DashboardActivity"
             android:label="@string/title_activity_dashboard" >
         </activity>
-
+        <activity
+            android:name=".library.SingleItemView"
+            android:label="SingleItemView">
+        </activity>
 
         <activity
             android:name="com.example.tdenisenko.flightreservation.login.HomeActivity"

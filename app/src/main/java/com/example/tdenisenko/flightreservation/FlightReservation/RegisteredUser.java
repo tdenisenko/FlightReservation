@@ -4,18 +4,18 @@ package com.example.tdenisenko.flightreservation.FlightReservation;
  * Created by SULUNGOZ on 13.12.2014.
  */
 public class RegisteredUser extends User {
-    String email;
-    int userID;
-    String username;
-    String password;
-    String location;
-    boolean isAdmin = false;
+    static String email;
+    static int userID;
+    static String username;
+    static String password;
+    static String location;
+    static boolean isAdmin = false;
     static int USER_COUNT = 0;
 
     public RegisteredUser(String username, String password){
-        this.userID = 1000 + USER_COUNT;
-        this.username = username;
-        this.password = password;
+        userID = 1000 + USER_COUNT;
+        username = username;
+        password = password;
     }
     private void logOut(){
 

@@ -3,8 +3,10 @@ package com.example.tdenisenko.flightreservation.FlightReservation;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TableRow;
 
 import com.example.tdenisenko.flightreservation.R;
 
@@ -15,6 +17,7 @@ public class Setting extends Activity {
     private Spinner spinner3;
     private Spinner spinner4;
     private Spinner spinner5;
+    private TableRow setcur;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +27,13 @@ public class Setting extends Activity {
         spinner3 = (Spinner) findViewById(R.id.countrySpinner);
         spinner4 = (Spinner) findViewById(R.id.unitsSpinner);
         spinner5 = (Spinner) findViewById(R.id.setcurSpinner);
+        setcur = (TableRow) findViewById(R.id.setcurrencyrow);
+
+        if (RegisteredUser.isAdmin == true) {
+            setcur.setVisibility(View.VISIBLE);
+        } else {
+            setcur.setVisibility(View.GONE);
+        }
 
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.currencySpinner, android.R.layout.simple_spinner_item);
