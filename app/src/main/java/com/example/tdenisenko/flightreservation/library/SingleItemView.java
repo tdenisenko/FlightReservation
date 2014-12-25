@@ -44,7 +44,7 @@ public class SingleItemView extends Activity {
 		txtrank.setText(rank);
 		txtcountry.setText(country);
 		txtpopulation.setText(population);
-
+        //BURAYA BUTTON EKLENECEK FAVOURITE FLIGHT USER REGISTERED DEGILSE LOGINE BAGLANACAK.//
 		// Capture position and set results to the ImageView
 		// Passes flag images URL into ImageLoader.class
 		//imageLoader.DisplayImage(flag, imgflag);

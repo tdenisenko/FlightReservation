@@ -51,9 +51,9 @@ public class SearchHtmlParser extends Activity {
             // Create a progressdialog
             mProgressDialog = new ProgressDialog(SearchHtmlParser.this);
             // Set progressdialog title
-            mProgressDialog.setTitle("Android Jsoup ListView Tutorial");
+            mProgressDialog.setTitle("Searching for Flights");
             // Set progressdialog message
-            mProgressDialog.setMessage("Loading...");
+            mProgressDialog.setMessage("Returning requested flights...");
             mProgressDialog.setIndeterminate(false);
             // Show progressdialog
             mProgressDialog.show();
