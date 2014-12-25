@@ -41,13 +41,13 @@ public class SearchHtmlParser extends Activity {
     String from;
     String fromCode;
     //String fromCityCode = "AYT";
-    String fromDate = "28.12.2014";
+    String fromDate;
     String to;
     String toCode;
     //String toCityCode = "ANK";
-    String toDate = "01.01.2015";
+    String toDate;
 
-    int adult = 1, child = 0, infant = 0;
+    int adult, child, infant;
     String flightType = "ONE";
     // URL Address
     //String url = "http://www.enuygun.com/ucak-bileti/barcelona-airport/istanbul/?gidis=26.12.2014&donus=28.12.2014&yetiskin=1";
@@ -71,6 +71,18 @@ public class SearchHtmlParser extends Activity {
         String[] arr2 = b.getString("arrival").split("\\|");
         to = arr2[1];
         toCode = arr2[0];
+        adult = b.getInt("adult");
+        child = b.getInt("child");
+        infant = b.getInt("infant");
+        String[] arr3 = b.getString("depDate").split("/");
+        fromDate = arr3[0] + "." + arr3[1] + "." + arr3[2];
+        Log.d("tirrak", fromDate);
+        //fromDate = fromDate.charAt(0) + fromDate.charAt(1) + "." + fromDate.charAt(3) + fromDate.charAt(4) + "." + fromDate.charAt(6) + fromDate.charAt(7);
+        toDate = b.getString("arrDate");
+        String[] arr4 = b.getString("arrDate").split("/");
+        toDate = arr4[0] + "." + arr4[1] + "." + arr4[2];
+        //toDate = toDate.charAt(0) + toDate.charAt(1) + "." + toDate.charAt(3) + toDate.charAt(4) + "." + toDate.charAt(6) + toDate.charAt(7);
+        Log.d("tirrak", fromDate);
         url = "http://online.alobilethatti.com/Home/Search?fromAirport=" + from + "&fromAirportCode=" + fromCode + "&toAirport=" + to + "&toAirportCode=" + toCode + "&fromDate=" + fromDate + "&toDate=" + toDate + "&adult=" + adult + "&child=" + child + "&infant" + infant + "&senior=0&young=0&military=0&student=0&flightType=" + flightType;
         //} else {
         //    String url = "http://online.alobilethatti.com/Home/Search?fromAirport=" + from + "&fromAirportCode=" + fromCode + "-" + fromCityCode + "&toAirport=" + to + "&toAirportCode=" + toCode + "-" + toCityCode + "&fromDate=" + fromDate + "&toDate=" + toDate + "&adult=" + adult + "&child=" + child + "&infant" + infant + "&senior=0&young=0&military=0&student=0&flightType=" + flightType;

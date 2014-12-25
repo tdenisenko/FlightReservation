@@ -271,7 +271,7 @@ public class searchMy extends Activity {
 
     private void updateLabel1() {
 
-        String myFormat = "dd/MM/yy"; //In which you need put here
+        String myFormat = "dd/MM/yyyy"; //In which you need put here
         SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.ENGLISH);
         depDate = myCalendar.getTime();
         String time = sdf.format(depDate);
@@ -285,7 +285,7 @@ public class searchMy extends Activity {
     }
     private void updateLabel2() {
 
-        String myFormat = "dd/MM/yy"; //In which you need put here
+        String myFormat = "dd/MM/yyyy"; //In which you need put here
         SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.ENGLISH);
         arrDate = myCalendar.getTime();
         String time = sdf.format(arrDate);
@@ -501,6 +501,12 @@ public class searchMy extends Activity {
         Bundle b = new Bundle();
         b.putString("departure", spinner5.getSelectedItem().toString());
         b.putString("arrival", spinner6.getSelectedItem().toString());
+        b.putInt("adult", Integer.valueOf(spinner1.getSelectedItem().toString()));
+        b.putInt("child", Integer.valueOf(spinner2.getSelectedItem().toString()));
+        b.putInt("infant", Integer.valueOf(spinner3.getSelectedItem().toString()));
+        b.putString("classes", spinner4.getSelectedItem().toString());
+        b.putString("depDate", textView1.getText().toString());
+        b.putString("arrDate", textView2.getText().toString());
         intent.putExtras(b);
         startActivity(intent);
         finish();
