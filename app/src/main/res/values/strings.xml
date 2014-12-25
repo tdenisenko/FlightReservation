@@ -7,15 +7,237 @@
 
     <string name="Dep">Settings</string>
     <string-array name="spinner5">
-        <item>Ankara</item>
-        <item>Istanbul</item>
-        <item>Bursa</item>
+        <item>-IST|İstanbul, İstanbul Tümü, Türkiye</item>
+        <item>ADA-
+ADA|Adana,Adana,Türkiye (ADA)</item>
+        <item>ADF-ADF|
+Adıyaman,Adiyaman,Türkiye (ADF)</item>
+        <item>AJI-AJI|
+Ağrı,Agri,Türkiye (AJI)</item>
+        <item>GZP-GZP|Alanya,Gazipaşa
+Havalimanı,Türkiye (GZP)</item>
+        <item>ESB-ANK|
+Ankara,Esenboga,Türkiye (ESB)</item>
+        <item>AYT-AYT|
+Antalya,Antalya,Türkiye (AYT)</item>
+        <item>BZI-BZI|
+Balıkesir,Balikesir,Türkiye (BZI)</item>
+        <item>EDO-BZI|
+Balıkesir,Edremit Körfez,Türkiye (EDO)</item>
+        <item>BAL-BAL|
+Batman,Batman,Türkiye (BAL)</item>
+        <item>BGG-BGG|
+Bingöl,Bingöl,Türkiye (BGG)</item>
+        <item>BJV-BXN|
+Bodrum,Milas,Türkiye (BJV)</item>
+        <item>BTZ-BTZ|
+Bursa,Bursa,Türkiye (BTZ)</item>
+        <item>YEI-BTZ|
+Bursa,Yenisehir,Türkiye (YEI)</item>
+        <item>CKZ-CKZ|
+Çanakkale,Çanakkale,Türkiye (CKZ)</item>
+        <item>DLM-DLM|
+Dalaman,Dalaman,Türkiye (DLM)</item>
+        <item>DNZ-DNZ|
+Denizli,Çardak,Türkiye (DNZ)</item>
+        <item>DIY-DIY|
+Diyarbakır,Diyarbakir,Türkiye (DIY)</item>
+        <item>EZS-EZS|
+Elazığ,Elazig,Türkiye (EZS)</item>
+        <item>ERC-ERC|
+Erzincan,Erzincan,Türkiye (ERC)</item>
+        <item>ERZ-ERZ|
+Erzurum,Erzurum,Türkiye (ERZ)</item>
+        <item>ESK-ESK|
+Eskişehir,Eskisehir,Türkiye (ESK)</item>
+        <item>AOE-ESK|
+Eskişehir,Anadolu University Apt,Türkiye (AOE)</item>
+        <item>GZT-GZT|Gaziantep,Gaziantep,Türkiye (GZT)</item>
+        <item>GKD-
+GKD|Gökçeada,Gökçeada Havalimanı,Türkiye (GKD)</item>
+        <item>HTY-HTY|Hatay,Hatay,Türkiye (HTY)</item>
+        <item>XHQ-XHQ|
+Hopa,Hopa,Türkiye (XHQ)</item>
+        <item>IGD-IGD|
+Iğdır,Iğdır,Türkiye (IGD)</item>
+        <item>ISE-ISE|
+Isparta,Süleyman Demirel,Türkiye (ISE)</item>
+        <item>IST-IST|
+İstanbul,Ataturk,Türkiye (IST)</item>
+        <item>SAW-IST|
+İstanbul,Sabiha Gokcen,Türkiye (SAW)</item>
+        <item>ADB-IZM|
+İzmir,Adnan Menderes,Türkiye (ADB)</item>
+        <item>KCM-KCM|
+Kahramanmaraş,Kahramanmaras,Türkiye (KCM)</item>
+        <item>KSY-
+KSY|Kars,Kars,Türkiye (KSY)</item>
+        <item>KFS-KFS|
+Kastamonu,Kastamonu Uzunyazı,Türkiye (KFS)</item>
+        <item>ASR-
+ASR|Kayseri,Kayseri,Türkiye (ASR)</item>
+        <item>ECN-ECN|
+Kıbrıs,Ercan,Türkiye (ECN)</item>
+        <item>KCO-KCO|
+Kocaeli,Kocaeli,Türkiye (KCO)</item>
+        <item>KYA-KYA|
+Konya,Konya,Türkiye (KYA)</item>
+        <item>KZR-KZR|Kütahya,Zafer
+Havaalanı,Türkiye (KZR)</item>
+        <item>MLX-MLX|
+Malatya,Malatya,Türkiye (MLX)</item>
+        <item>MQM-MQM|
+Mardin,Mardin,Türkiye (MQM)</item>
+        <item>MZH-MZH|
+Merzifon,Merzifon,Türkiye (MZH)</item>
+        <item>MSR-MSR|
+Muş,Mus,Türkiye (MSR)</item>
+        <item>NAV-NAV|
+Nevşehir,Nevsehir,Türkiye (NAV)</item>
+        <item>SZF-SSX|
+Samsun,Carsamba Airport,Türkiye (SZF)</item>
+        <item>SXZ-SXZ|
+Siirt,Siirt,Türkiye (SXZ)</item>
+        <item>NOP-SIC|
+Sinop,Sinop,Türkiye (NOP)</item>
+        <item>VAS-VAS|
+Sivas,Sivas,Türkiye (VAS)</item>
+        <item>GNY-SFQ|
+Şanlıurfa,Guney Anadolu,Türkiye (GNY)</item>
+        <item>SFQ-SFQ|
+Şanlıurfa,Sanliurfa,Türkiye (SFQ)</item>
+        <item>NKT-NKT|
+Şırnak,Şerafettin Elçi Havalimanı ,Türkiye
+(NKT)</item>
+        <item>EQ-TEQ|Tekirdağ,Çorlu,Türkiye (TEQ)</item>
+        <item>TJK-
+TJK|Tokat,Tokat,Türkiye (TJK)</item>
+        <item>TZX-TZX|
+Trabzon,Trabzon,Türkiye (TZX)</item>
+        <item>USQ-USQ|
+Uşak,Usak,Türkiye (USQ)</item>
+        <item>VAN-VAN|Van,Van,Türkiye
+(VAN)</item>
+        <item>ONQ-ONQ|Zonguldak,Zonguldak,Türkiye (ONQ)
+</item>
+
+
     </string-array>
     <string name="Arr">Settings</string>
     <string-array name="spinner6">
-        <item>Hatay</item>
-        <item>Trabzon</item>
-        <item>Antalya</item>
+        <item>-IST|İstanbul, İstanbul Tümü, Türkiye</item>
+        <item>ADA-
+ADA|Adana,Adana,Türkiye (ADA)</item>
+        <item>ADF-ADF|
+Adıyaman,Adiyaman,Türkiye (ADF)</item>
+        <item>AJI-AJI|
+Ağrı,Agri,Türkiye (AJI)</item>
+        <item>GZP-GZP|Alanya,Gazipaşa
+Havalimanı,Türkiye (GZP)</item>
+        <item>ESB-ANK|
+Ankara,Esenboga,Türkiye (ESB)</item>
+        <item>AYT-AYT|
+Antalya,Antalya,Türkiye (AYT)</item>
+        <item>BZI-BZI|
+Balıkesir,Balikesir,Türkiye (BZI)</item>
+        <item>EDO-BZI|
+Balıkesir,Edremit Körfez,Türkiye (EDO)</item>
+        <item>BAL-BAL|
+Batman,Batman,Türkiye (BAL)</item>
+        <item>BGG-BGG|
+Bingöl,Bingöl,Türkiye (BGG)</item>
+        <item>BJV-BXN|
+Bodrum,Milas,Türkiye (BJV)</item>
+        <item>BTZ-BTZ|
+Bursa,Bursa,Türkiye (BTZ)</item>
+        <item>YEI-BTZ|
+Bursa,Yenisehir,Türkiye (YEI)</item>
+        <item>CKZ-CKZ|
+Çanakkale,Çanakkale,Türkiye (CKZ)</item>
+        <item>DLM-DLM|
+Dalaman,Dalaman,Türkiye (DLM)</item>
+        <item>DNZ-DNZ|
+Denizli,Çardak,Türkiye (DNZ)</item>
+        <item>DIY-DIY|
+Diyarbakır,Diyarbakir,Türkiye (DIY)</item>
+        <item>EZS-EZS|
+Elazığ,Elazig,Türkiye (EZS)</item>
+        <item>ERC-ERC|
+Erzincan,Erzincan,Türkiye (ERC)</item>
+        <item>ERZ-ERZ|
+Erzurum,Erzurum,Türkiye (ERZ)</item>
+        <item>ESK-ESK|
+Eskişehir,Eskisehir,Türkiye (ESK)</item>
+        <item>AOE-ESK|
+Eskişehir,Anadolu University Apt,Türkiye (AOE)</item>
+        <item>GZT-GZT|Gaziantep,Gaziantep,Türkiye (GZT)</item>
+        <item>GKD-
+GKD|Gökçeada,Gökçeada Havalimanı,Türkiye (GKD)</item>
+        <item>HTY-HTY|Hatay,Hatay,Türkiye (HTY)</item>
+        <item>XHQ-XHQ|
+Hopa,Hopa,Türkiye (XHQ)</item>
+        <item>IGD-IGD|
+Iğdır,Iğdır,Türkiye (IGD)</item>
+        <item>ISE-ISE|
+Isparta,Süleyman Demirel,Türkiye (ISE)</item>
+        <item>IST-IST|
+İstanbul,Ataturk,Türkiye (IST)</item>
+        <item>SAW-IST|
+İstanbul,Sabiha Gokcen,Türkiye (SAW)</item>
+        <item>ADB-IZM|
+İzmir,Adnan Menderes,Türkiye (ADB)</item>
+        <item>KCM-KCM|
+Kahramanmaraş,Kahramanmaras,Türkiye (KCM)</item>
+        <item>KSY-
+KSY|Kars,Kars,Türkiye (KSY)</item>
+        <item>KFS-KFS|
+Kastamonu,Kastamonu Uzunyazı,Türkiye (KFS)</item>
+        <item>ASR-
+ASR|Kayseri,Kayseri,Türkiye (ASR)</item>
+        <item>ECN-ECN|
+Kıbrıs,Ercan,Türkiye (ECN)</item>
+        <item>KCO-KCO|
+Kocaeli,Kocaeli,Türkiye (KCO)</item>
+        <item>KYA-KYA|
+Konya,Konya,Türkiye (KYA)</item>
+        <item>KZR-KZR|Kütahya,Zafer
+Havaalanı,Türkiye (KZR)</item>
+        <item>MLX-MLX|
+Malatya,Malatya,Türkiye (MLX)</item>
+        <item>MQM-MQM|
+Mardin,Mardin,Türkiye (MQM)</item>
+        <item>MZH-MZH|
+Merzifon,Merzifon,Türkiye (MZH)</item>
+        <item>MSR-MSR|
+Muş,Mus,Türkiye (MSR)</item>
+        <item>NAV-NAV|
+Nevşehir,Nevsehir,Türkiye (NAV)</item>
+        <item>SZF-SSX|
+Samsun,Carsamba Airport,Türkiye (SZF)</item>
+        <item>SXZ-SXZ|
+Siirt,Siirt,Türkiye (SXZ)</item>
+        <item>NOP-SIC|
+Sinop,Sinop,Türkiye (NOP)</item>
+        <item>VAS-VAS|
+Sivas,Sivas,Türkiye (VAS)</item>
+        <item>GNY-SFQ|
+Şanlıurfa,Guney Anadolu,Türkiye (GNY)</item>
+        <item>SFQ-SFQ|
+Şanlıurfa,Sanliurfa,Türkiye (SFQ)</item>
+        <item>NKT-NKT|
+Şırnak,Şerafettin Elçi Havalimanı ,Türkiye
+(NKT)</item>
+        <item>EQ-TEQ|Tekirdağ,Çorlu,Türkiye (TEQ)</item>
+        <item>TJK-
+TJK|Tokat,Tokat,Türkiye (TJK)</item>
+        <item>TZX-TZX|
+Trabzon,Trabzon,Türkiye (TZX)</item>
+        <item>USQ-USQ|
+Uşak,Usak,Türkiye (USQ)</item>
+        <item>VAN-VAN|Van,Van,Türkiye
+(VAN)</item>
+        <item>ONQ-ONQ|Zonguldak,Zonguldak,Türkiye (ONQ)
+</item>
     </string-array>
 
     <string name="City"></string>
