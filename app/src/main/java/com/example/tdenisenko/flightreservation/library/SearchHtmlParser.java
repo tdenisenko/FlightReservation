@@ -62,7 +62,7 @@ public class SearchHtmlParser extends Activity {
         setContentView(R.layout.listview_main);
         // Execute DownloadJSON AsyncTask
         new JsoupListView().execute();
-        Log.d("yarrak", url);
+        Log.d("troll", url);
 
     }
 

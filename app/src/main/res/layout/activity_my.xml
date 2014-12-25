@@ -20,22 +20,6 @@
         android:layout_alignParentEnd="true"
         android:layout_toRightOf="@+id/cabin_textView" />
         -->
-    <Spinner
-        android:layout_width="2dp"
-        android:layout_height="match_parent"
-        android:id="@+id/spinner5"
-        android:layout_alignParentTop="false"
-        android:layout_alignParentStart="false"
-        android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/cabin_textView"
-        android:layout_weight="2"
-        android:layout_above="@+id/arrival_textView" />
-
-
-
-
-
-
 
 
     <TextView
@@ -72,20 +56,30 @@
         android:layout_alignParentEnd="true"
         android:layout_alignBottom="@+id/arrival_textView" />
         -->
+
     <Spinner
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner5"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBottom="@+id/departure_textView"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@id/cabin_textView"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="-15dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/spinner6"
-        android:layout_alignParentTop="false"
-        android:layout_alignParentStart="false"
-        android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/cabin_textView"
+        android:layout_marginLeft="5dp"
         android:layout_alignBottom="@+id/arrival_textView"
-        android:layout_weight="2"
-        android:layout_below="@+id/spinner5">
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@id/cabin_textView"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/spinner5"
+        android:layout_marginTop="15dp" />
 
-
-        </Spinner>
 
     <CheckBox
         android:layout_width="wrap_content"
