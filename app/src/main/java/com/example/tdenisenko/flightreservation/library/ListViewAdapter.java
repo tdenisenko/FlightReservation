@@ -57,7 +57,7 @@ public class ListViewAdapter extends BaseAdapter {
         TextView arrivalDepartureTime;
         TextView departureArrivalPlace;
         TextView arrivalDeparturePlace;
-        TextView seats;
+      //  TextView seats;
         TextView kabinClass;
         TextView price;
 
@@ -77,7 +77,7 @@ public class ListViewAdapter extends BaseAdapter {
         arrivalDepartureTime = (TextView) itemView.findViewById(R.id.arrival_departure_time);
         departureArrivalPlace = (TextView) itemView.findViewById(R.id.departure_arrival_place);
         arrivalDeparturePlace = (TextView) itemView.findViewById(R.id.arrival_departure_place);
-        seats = (TextView) itemView.findViewById(R.id.seat);
+        //seats = (TextView) itemView.findViewById(R.id.seat);
         kabinClass = (TextView) itemView.findViewById(R.id.Class);
         price = (TextView) itemView.findViewById(R.id.price);
 
@@ -91,7 +91,7 @@ public class ListViewAdapter extends BaseAdapter {
         arrivalDepartureTime.setText(resultp.get(SearchHtmlParser.ARRIVALDEPARTURETIME));
         departureArrivalPlace.setText(resultp.get(SearchHtmlParser.DEPARTUREARRIVALPLACE));
         arrivalDeparturePlace.setText(resultp.get(SearchHtmlParser.ARRIVALDEPARTUREPLACE));
-        seats.setText(resultp.get(SearchHtmlParser.SEATS));
+       // seats.setText(resultp.get(SearchHtmlParser.SEATS));
         kabinClass.setText(resultp.get(SearchHtmlParser.KABINCLASS));
         price.setText(resultp.get(SearchHtmlParser.PRICE));
         // Capture position and set results to the ImageView
@@ -116,7 +116,7 @@ public class ListViewAdapter extends BaseAdapter {
                 intent.putExtra("departureArrivalPlace", resultp.get(SearchHtmlParser.DEPARTUREARRIVALPLACE));
                 // Pass all data population
                 intent.putExtra("arrivalDeparturePlace",resultp.get(SearchHtmlParser.ARRIVALDEPARTUREPLACE));
-                intent.putExtra("seats", resultp.get(SearchHtmlParser.SEATS));
+              //  intent.putExtra("seats", resultp.get(SearchHtmlParser.SEATS));
                 // Pass all data country
                 intent.putExtra("kabinclass", resultp.get(SearchHtmlParser.KABINCLASS));
                 // Pass all data population

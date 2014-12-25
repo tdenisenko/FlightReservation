@@ -33,7 +33,7 @@ public class SearchHtmlParser extends Activity {
     static String ARRIVALDEPARTURETIME = "arrivalDepartureTime";
     static String DEPARTUREARRIVALPLACE = "departureArrivalPlace";
     static String ARRIVALDEPARTUREPLACE = "arrivalDeparturePlace";
-    static String SEATS = "seats";
+   // static String SEATS = "seats";
     static String KABINCLASS = "kabinclass";
     static String PRICE = "price";
     static String FLAG= "flag";

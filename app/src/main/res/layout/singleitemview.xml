@@ -85,26 +85,13 @@
         android:layout_toRightOf="@+id/arrival_departure_place_label"
         android:layout_alignBottom="@+id/departure_arrival_place_label" />
 
-    <TextView
-        android:id="@+id/seat_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/arrival_departure_place_label"
-        android:text="Seats :" />
 
-
-    <TextView
-        android:id="@+id/seat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/seat_label"
-        android:layout_alignBottom="@+id/seat_label" />
 
     <TextView
         android:id="@+id/class_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/seat_label"
+        android:layout_below="@+id/arrival_departure_place_label"
         android:text="Cabin Class :" />
 
 

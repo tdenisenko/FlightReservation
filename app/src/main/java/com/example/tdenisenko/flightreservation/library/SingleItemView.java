@@ -15,7 +15,7 @@ public class SingleItemView extends Activity {
     String arrivalDepartureTime;
     String departureArrivalPlace;
     String arrivalDeparturePlace;
-    String seats;
+    //String seats;
     String kabinClass;
     String price;
 
@@ -42,7 +42,7 @@ public class SingleItemView extends Activity {
         departureArrivalPlace = i.getStringExtra("departureArrivalPlace");
         // Get the result of population
         arrivalDeparturePlace = i.getStringExtra("arrivalDeparturePlace");
-        seats = i.getStringExtra("seats");
+       // seats = i.getStringExtra("seats");
         // Get the result of country
         kabinClass = i.getStringExtra("kabinClass");
         // Get the result of population
@@ -57,7 +57,7 @@ public class SingleItemView extends Activity {
         TextView txtarrivalDepartureTime = (TextView) findViewById(R.id.arrival_departure_time);
         TextView txtdepartureArrivalPlace = (TextView) findViewById(R.id.departure_arrival_place);
         TextView txtarrivalDeparturePlace = (TextView) findViewById(R.id.arrival_departure_place);
-        TextView txtseats = (TextView) findViewById(R.id.seat);
+       // TextView txtseats = (TextView) findViewById(R.id.seat);
         TextView txtkabinClass = (TextView) findViewById(R.id.Class);
         TextView txtprice = (TextView) findViewById(R.id.price);
 
@@ -71,7 +71,7 @@ public class SingleItemView extends Activity {
         txtarrivalDepartureTime.setText(arrivalDepartureTime);
         txtdepartureArrivalPlace.setText(departureArrivalPlace);
         txtarrivalDeparturePlace.setText(arrivalDeparturePlace);
-        txtseats.setText(seats);
+       // txtseats.setText(seats);
         txtkabinClass.setText(kabinClass);
         txtprice.setText(price);
         //BURAYA BUTTON EKLENECEK FAVOURITE FLIGHT USER REGISTERED DEGILSE LOGINE BAGLANACAK.//
