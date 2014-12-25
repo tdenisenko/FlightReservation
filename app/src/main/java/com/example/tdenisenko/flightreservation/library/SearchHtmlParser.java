@@ -41,11 +41,11 @@ public class SearchHtmlParser extends Activity {
     String from;
     String fromCode;
     //String fromCityCode = "AYT";
-    String fromDate;
+    String fromDate = "27.12.2014";
     String to;
     String toCode;
     //String toCityCode = "ANK";
-    String toDate;
+    String toDate = "01.01.2015";
 
     int adult, child, infant;
     String flightType = "ONE";
@@ -53,7 +53,7 @@ public class SearchHtmlParser extends Activity {
     //String url = "http://www.enuygun.com/ucak-bileti/barcelona-airport/istanbul/?gidis=26.12.2014&donus=28.12.2014&yetiskin=1";
 
     String url;
-    //String url = "http://online.alobilethatti.com/Home/Search?fromAirport=%C4%B0stanbul%2C%20Sabiha%20Gokcen%2C%20T%C3%BCrkiye%20(SAW)&fromAirportCode=SAW-IST&toAirport=Antalya%2C%20Antalya%2C%20T%C3%BCrkiye%20(AYT)&toAirportCode=AYT-AYT&fromDate=27.12.2014&toDate=01.01.2015&adult=1&child=0&infant=0&senior=0&young=0&military=0&student=0&flightType=ONE"
+    //String url = "http://online.alobilethatti.com/Home/Search?fromAirport=%C4%B0stanbul%2C%20Sabiha%20Gokcen%2C%20T%C3%BCrkiye%20(SAW)&fromAirportCode=SAW-IST&toAirport=Antalya%2C%20Antalya%2C%20T%C3%BCrkiye%20(AYT)&toAirportCode=AYT-AYT&fromDate=27.12.2014&toDate=01.01.2015&adult=1&child=0&infant=0&senior=0&young=0&military=0&student=0&flightType=ONE";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -76,18 +76,18 @@ public class SearchHtmlParser extends Activity {
         infant = b.getInt("infant");
         String[] arr3 = b.getString("depDate").split("/");
         fromDate = arr3[0] + "." + arr3[1] + "." + arr3[2];
-        Log.d("tirrak", fromDate);
+        //Log.d("tirrak", fromDate);
         //fromDate = fromDate.charAt(0) + fromDate.charAt(1) + "." + fromDate.charAt(3) + fromDate.charAt(4) + "." + fromDate.charAt(6) + fromDate.charAt(7);
-        toDate = b.getString("arrDate");
+        //toDate = b.getString("arrDate");
         String[] arr4 = b.getString("arrDate").split("/");
         toDate = arr4[0] + "." + arr4[1] + "." + arr4[2];
         //toDate = toDate.charAt(0) + toDate.charAt(1) + "." + toDate.charAt(3) + toDate.charAt(4) + "." + toDate.charAt(6) + toDate.charAt(7);
-        Log.d("tirrak", fromDate);
+        //Log.d("tirrak", fromDate);
         url = "http://online.alobilethatti.com/Home/Search?fromAirport=" + from + "&fromAirportCode=" + fromCode + "&toAirport=" + to + "&toAirportCode=" + toCode + "&fromDate=" + fromDate + "&toDate=" + toDate + "&adult=" + adult + "&child=" + child + "&infant" + infant + "&senior=0&young=0&military=0&student=0&flightType=" + flightType;
         //} else {
         //    String url = "http://online.alobilethatti.com/Home/Search?fromAirport=" + from + "&fromAirportCode=" + fromCode + "-" + fromCityCode + "&toAirport=" + to + "&toAirportCode=" + toCode + "-" + toCityCode + "&fromDate=" + fromDate + "&toDate=" + toDate + "&adult=" + adult + "&child=" + child + "&infant" + infant + "&senior=0&young=0&military=0&student=0&flightType=" + flightType;
         //}
-        Log.d("troll", url);
+        //Log.d("troll", url);
 
     }
 

@@ -497,6 +497,13 @@ public class searchMy extends Activity {
     }
 
     public void parserView(View view){
+        if (textView1.getText().toString().isEmpty() || textView2.getText().toString().isEmpty() ||
+                (Integer.valueOf(spinner1.getSelectedItem().toString()) +
+                        Integer.valueOf(spinner2.getSelectedItem().toString()) +
+                        Integer.valueOf(spinner3.getSelectedItem().toString())) == 0) {
+            Toast.makeText(getApplicationContext(), "Invalid inputs.", Toast.LENGTH_LONG).show();
+            return;
+        }
         Intent intent = new Intent(this, SearchHtmlParser.class);
         Bundle b = new Bundle();
         b.putString("departure", spinner5.getSelectedItem().toString());
@@ -509,7 +516,6 @@ public class searchMy extends Activity {
         b.putString("arrDate", textView2.getText().toString());
         intent.putExtras(b);
         startActivity(intent);
-        finish();
     }
 
 
