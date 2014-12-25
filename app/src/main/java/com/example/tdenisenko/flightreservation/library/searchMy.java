@@ -228,6 +228,30 @@ public class searchMy extends Activity {
             }
 
         });
+
+        spinner5.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            public void onItemSelected(AdapterView<?> parentView,
+                                       View selectedItemView, int position, long id) {
+                spinner5.setSelection(position);
+            }
+
+            public void onNothingSelected(AdapterView<?> arg0) {// do nothing
+            }
+
+        });
+
+        spinner6.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            public void onItemSelected(AdapterView<?> parentView,
+                                       View selectedItemView, int position, long id) {
+                spinner6.setSelection(position);
+            }
+
+            public void onNothingSelected(AdapterView<?> arg0) {// do nothing
+            }
+
+        });
     }
     // Add spinner data
     /*public void addListenerOnSpinnerItemSelection(){
@@ -470,6 +494,16 @@ public class searchMy extends Activity {
     public void flightsView(View view) {
         Intent intent = new Intent(this, Flights.class);
         startActivity(intent);
+    }
+
+    public void parserView(View view){
+        Intent intent = new Intent(this, SearchHtmlParser.class);
+        Bundle b = new Bundle();
+        b.putString("departure", spinner5.getSelectedItem().toString());
+        b.putString("arrival", spinner6.getSelectedItem().toString());
+        intent.putExtras(b);
+        startActivity(intent);
+        finish();
     }
 
 

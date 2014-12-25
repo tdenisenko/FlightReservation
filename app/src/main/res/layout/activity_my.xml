@@ -261,7 +261,7 @@
         android:layout_height="wrap_content"
         android:text="Search"
         android:id="@+id/searchButton"
-        android:onClick="openSiteView"
+        android:onClick="parserView"
         android:layout_alignTop="@+id/loginButton"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"

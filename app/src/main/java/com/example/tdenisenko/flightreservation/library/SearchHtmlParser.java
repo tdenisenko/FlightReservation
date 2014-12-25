@@ -38,21 +38,21 @@ public class SearchHtmlParser extends Activity {
     static String KABINCLASS = "kabinclass";
     static String PRICE = "price";
     static String FLAG= "flag";
-    String from = "Antalya,Antalya,Türkiye (AYT)";
-    String fromCode = from.substring(from.length() - 4, from.length() - 1);
-    String fromCityCode = "AYT";
+    String from;
+    String fromCode;
+    //String fromCityCode = "AYT";
     String fromDate = "28.12.2014";
-    String to = "Ankara, Esenboga, Türkiye (ESB)";
-    String toCode = to.substring(to.length() - 4, to.length() - 1);
-    String toCityCode = "ANK";
+    String to;
+    String toCode;
+    //String toCityCode = "ANK";
     String toDate = "01.01.2015";
 
     int adult = 1, child = 0, infant = 0;
-    String flightType = "RET";
+    String flightType = "ONE";
     // URL Address
     //String url = "http://www.enuygun.com/ucak-bileti/barcelona-airport/istanbul/?gidis=26.12.2014&donus=28.12.2014&yetiskin=1";
 
-    String url = "http://online.alobilethatti.com/Home/Search?fromAirport=" + from + "&fromAirportCode=" + fromCode + "-" + fromCityCode + "&toAirport=" + to + "&toAirportCode=" + toCode + "-" + toCityCode + "&fromDate=" + fromDate + "&toDate=" + toDate + "&adult=" + adult + "&child=" + child + "&infant" + infant + "&senior=0&young=0&military=0&student=0&flightType=" + flightType;
+    String url;
     //String url = "http://online.alobilethatti.com/Home/Search?fromAirport=%C4%B0stanbul%2C%20Sabiha%20Gokcen%2C%20T%C3%BCrkiye%20(SAW)&fromAirportCode=SAW-IST&toAirport=Antalya%2C%20Antalya%2C%20T%C3%BCrkiye%20(AYT)&toAirportCode=AYT-AYT&fromDate=27.12.2014&toDate=01.01.2015&adult=1&child=0&infant=0&senior=0&young=0&military=0&student=0&flightType=ONE"
 
     @Override
@@ -62,6 +62,19 @@ public class SearchHtmlParser extends Activity {
         setContentView(R.layout.listview_main);
         // Execute DownloadJSON AsyncTask
         new JsoupListView().execute();
+        //if (flightType.equals("RET")) {
+        Bundle b = getIntent().getExtras();
+        String[] arr1 = b.getString("departure").split("\\|");
+        Log.d("what", arr1[0] + " and " + arr1[1]);
+        from = arr1[1];
+        fromCode = arr1[0];
+        String[] arr2 = b.getString("arrival").split("\\|");
+        to = arr2[1];
+        toCode = arr2[0];
+        url = "http://online.alobilethatti.com/Home/Search?fromAirport=" + from + "&fromAirportCode=" + fromCode + "&toAirport=" + to + "&toAirportCode=" + toCode + "&fromDate=" + fromDate + "&toDate=" + toDate + "&adult=" + adult + "&child=" + child + "&infant" + infant + "&senior=0&young=0&military=0&student=0&flightType=" + flightType;
+        //} else {
+        //    String url = "http://online.alobilethatti.com/Home/Search?fromAirport=" + from + "&fromAirportCode=" + fromCode + "-" + fromCityCode + "&toAirport=" + to + "&toAirportCode=" + toCode + "-" + toCityCode + "&fromDate=" + fromDate + "&toDate=" + toDate + "&adult=" + adult + "&child=" + child + "&infant" + infant + "&senior=0&young=0&military=0&student=0&flightType=" + flightType;
+        //}
         Log.d("troll", url);
 
     }
