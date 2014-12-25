@@ -3,44 +3,125 @@
     android:layout_height="fill_parent" >
 
     <TextView
-        android:id="@+id/ranklabel"
+        android:id="@+id/Airlines_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ranklabel" />
+        android:text="Airlines :" />
 
     <TextView
-        android:id="@+id/rank"
+        android:id="@+id/Airlines"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/ranklabel" />
+        android:layout_toRightOf="@+id/Airlines_label" />
 
     <TextView
-        android:id="@+id/countrylabel"
+        android:id="@+id/Flight_number_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ranklabel"
-        android:text="@string/countrylabel" />
+        android:layout_below="@+id/Airlines_label"
+        android:text="Flight Number :" />
 
     <TextView
-        android:id="@+id/country"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/rank"
-        android:layout_toRightOf="@+id/countrylabel" />
+    android:id="@+id/Flight_number"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/Flight_number_label" />
 
     <TextView
-        android:id="@+id/populationlabel"
+        android:id="@+id/departure_arrival_time_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/countrylabel"
-        android:text="@string/populationlabel" />
+        android:layout_below="@+id/Flight_number_label"
+        android:text="Departure Time :" />
 
     <TextView
-        android:id="@+id/population"
+        android:id="@+id/departure_arrival_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/country"
-        android:layout_toRightOf="@+id/populationlabel" />
+        android:layout_toRightOf="@+id/departure_arrival_time_label" />
+
+    <TextView
+        android:id="@+id/arrival_departure_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/departure_arrival_time_label"
+        android:text="Departure Time :" />
+
+    <TextView
+        android:id="@+id/arrival_departure_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/arrival_departure_time_label" />
+
+
+    <TextView
+        android:id="@+id/departure_arrival_place_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arrival_departure_time_label"
+        android:text="Departure Time :" />
+
+    <TextView
+        android:id="@+id/departure_arrival_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/departure_arrival_place_label" />
+    <TextView
+        android:id="@+id/arrival_departure_place_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/departure_arrival_place_label"
+        android:text="Departure Time :" />
+
+    <TextView
+        android:id="@+id/arrival_departure_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/arrival_departure_place_label" />
+
+    <TextView
+        android:id="@+id/seat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/arrival_departure_place_label"
+        android:text="Seats :" />
+
+
+    <TextView
+        android:id="@+id/seat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/seat_label" />
+
+    <TextView
+        android:id="@+id/class_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seat_label"
+        android:text="Kabin Class :" />
+
+
+    <TextView
+        android:id="@+id/Class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/class_label" />
+
+    <TextView
+        android:id="@+id/price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/class_label"
+        android:text="Price :" />
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/price_label" />
+
+
 <ImageView
     android:id= "@+id/flag"
     android:layout_width="wrap_content"

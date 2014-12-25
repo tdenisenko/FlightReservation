@@ -1,67 +1,90 @@
-<RelativeLayout
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/images"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:paddingTop="20dp"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp"
+    android:visibility="visible">
 
-    >
-    <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <TableRow
 
-        <TableRow>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Location"
-                android:id="@+id/flights_Location"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-
-                />
-
-    <Spinner
-
-
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/location_spinner1"
-    android:spinnerMode="dropdown"
-    android:gravity="left"
-    android:layout_weight="2"
-    android:visibility="visible"
-    android:layout_toEndOf="@id/flights_Location"
-    android:layout_marginTop="15dp"
-    android:layout_toRightOf="@+id/Currency"
-    android:layout_alignBottom="@+id/flights_Location"
-
-        />
-
-/>   <Spinner
-
-
-            android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/location_spinner2"
-            android:spinnerMode="dropdown"
-            android:gravity="left"
-            android:layout_weight="2"
-            android:visibility="visible"
-            android:layout_toEndOf="@id/flights_Location"
-            android:layout_marginTop="15dp"
-            android:layout_toRightOf="@+id/Currency"
-            android:layout_alignBottom="@+id/flights_Location"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Location"
+            android:id="@+id/flight_location"
+            android:layout_alignEnd="@+id/Language"
+
 
             />
 
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/city_spinner"
+            android:spinnerMode="dropdown"
+            android:gravity="left"
+            android:visibility="visible"
 
-        </TableRow>
+
+            />
+
+    </TableRow>
+
+    <TableRow android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Favorite Flight"
+        android:id="@+id/favFlight"
+        android:layout_alignEnd="@+id/favFlight"
 
 
-        </TableLayout>
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fav_spinner"
+        android:spinnerMode="dropdown"
+        android:gravity="left"
+        android:layout_weight="2"
+        android:visibility="visible"
 
 
-    </RelativeLayout>
+
+        />
+    </TableRow>
+    <TableRow android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Offers"
+        android:id="@+id/offers"
+
+
+
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/offers_spinner"
+        android:spinnerMode="dropdown"
+        android:gravity="left"
+        android:layout_weight="2"
+        android:visibility="visible"
+
+
+
+        />
+    </TableRow>
+
+    </TableLayout>

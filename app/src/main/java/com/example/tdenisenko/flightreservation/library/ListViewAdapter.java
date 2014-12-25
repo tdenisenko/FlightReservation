@@ -51,9 +51,16 @@ public class ListViewAdapter extends BaseAdapter {
 
     public View getView(final int position, View convertView, ViewGroup parent) {
         // Declare Variables
-        TextView rank;
-        TextView country;
-        TextView population;
+        TextView airlines;
+        TextView flightNumber;
+        TextView departureArrivalTime;
+        TextView arrivalDepartureTime;
+        TextView departureArrivalPlace;
+        TextView arrivalDeparturePlace;
+        TextView seats;
+        TextView kabinClass;
+        TextView price;
+
         ImageView flag;
 
         inflater = (LayoutInflater) context
@@ -64,17 +71,29 @@ public class ListViewAdapter extends BaseAdapter {
         resultp = data.get(position);
 
         // Locate the TextViews in listview_item.xml
-        rank = (TextView) itemView.findViewById(R.id.rank);
-        country = (TextView) itemView.findViewById(R.id.country);
-        population = (TextView) itemView.findViewById(R.id.population);
+        airlines = (TextView) itemView.findViewById(R.id.Airlines);
+        flightNumber = (TextView) itemView.findViewById(R.id.Flight_number);
+        departureArrivalTime = (TextView) itemView.findViewById(R.id.departure_arrival_time);
+        arrivalDepartureTime = (TextView) itemView.findViewById(R.id.arrival_departure_time);
+        departureArrivalPlace = (TextView) itemView.findViewById(R.id.departure_arrival_place);
+        arrivalDeparturePlace = (TextView) itemView.findViewById(R.id.arrival_departure_place);
+        seats = (TextView) itemView.findViewById(R.id.seat);
+        kabinClass = (TextView) itemView.findViewById(R.id.Class);
+        price = (TextView) itemView.findViewById(R.id.price);
 
         // Locate the ImageView in listview_item.xml
         flag = (ImageView) itemView.findViewById(R.id.flag);
 
         // Capture position and set results to the TextViews
-        rank.setText(resultp.get(SearchHtmlParser.RANK));
-        country.setText(resultp.get(SearchHtmlParser.COUNTRY));
-        population.setText(resultp.get(SearchHtmlParser.POPULATION));
+        airlines.setText(resultp.get(SearchHtmlParser.AIRLINES));
+        flightNumber.setText(resultp.get(SearchHtmlParser.FLIGHTNUMBER));
+        departureArrivalTime.setText(resultp.get(SearchHtmlParser.DEPARTUREARRIVALTIME));
+        arrivalDepartureTime.setText(resultp.get(SearchHtmlParser.ARRIVALDEPARTURETIME));
+        departureArrivalPlace.setText(resultp.get(SearchHtmlParser.DEPARTUREARRIVALPLACE));
+        arrivalDeparturePlace.setText(resultp.get(SearchHtmlParser.ARRIVALDEPARTURETIME));
+        seats.setText(resultp.get(SearchHtmlParser.SEATS));
+        kabinClass.setText(resultp.get(SearchHtmlParser.KABINCLASS));
+        price.setText(resultp.get(SearchHtmlParser.PRICE));
         // Capture position and set results to the ImageView
         // Passes flag images URL into ImageLoader.class
         imageLoader.DisplayImage(resultp.get(SearchHtmlParser.FLAG), flag);
@@ -87,11 +106,21 @@ public class ListViewAdapter extends BaseAdapter {
                 resultp = data.get(position);
                 Intent intent = new Intent(context, SingleItemView.class);
                 // Pass all data rank
-                intent.putExtra("rank", resultp.get(SearchHtmlParser.RANK));
+                intent.putExtra("airlines", resultp.get(SearchHtmlParser.AIRLINES));
                 // Pass all data country
-                intent.putExtra("country", resultp.get(SearchHtmlParser.COUNTRY));
+                intent.putExtra("flightNumber", resultp.get(SearchHtmlParser.FLIGHTNUMBER));
                 // Pass all data population
-                intent.putExtra("population",resultp.get(SearchHtmlParser.POPULATION));
+                intent.putExtra("departureArrivalTime",resultp.get(SearchHtmlParser.DEPARTUREARRIVALTIME));
+                intent.putExtra("arrivalDepartureTime", resultp.get(SearchHtmlParser.ARRIVALDEPARTURETIME));
+                // Pass all data country
+                intent.putExtra("departureArrivalPlace", resultp.get(SearchHtmlParser.DEPARTUREARRIVALPLACE));
+                // Pass all data population
+                intent.putExtra("arrivalDeparturePlace",resultp.get(SearchHtmlParser.ARRIVALDEPARTUREPLACE));
+                intent.putExtra("seats", resultp.get(SearchHtmlParser.SEATS));
+                // Pass all data country
+                intent.putExtra("kabinclass", resultp.get(SearchHtmlParser.KABINCLASS));
+                // Pass all data population
+                intent.putExtra("price",resultp.get(SearchHtmlParser.PRICE));
                 // Pass all data flag
                 intent.putExtra("flag", resultp.get(SearchHtmlParser.FLAG));
                 // Start SingleItemView Class

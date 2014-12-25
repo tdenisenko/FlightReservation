@@ -3,6 +3,42 @@
 
     <string name="app_name">FlightReservation</string>
     <string name="hello_world">Hello world!</string>
+
+    <string name="City"></string>
+    <string-array name="city_spinner">
+        <item>Ankara</item>
+        <item>Barcelona</item>
+        <item>Basel</item>
+        <item>Berlin</item>
+        <item>Hamburg</item>
+        <item>Istanbul</item>
+        <item>Madrid</item>
+        <item>Paris</item>
+        <item>Rome</item>
+    </string-array>
+
+
+
+    <string name="FavoriteFlight"></string>
+    <string-array name="fav_spinner">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>
+
+    <string name="Offers"></string>
+    <string-array name="offers_spinner">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>
+
     <string name="Currency">Settings</string>
     <string-array name="currencySpinner">
     <item>EUR</item>

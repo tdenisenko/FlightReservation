@@ -25,10 +25,19 @@ public class SearchHtmlParser extends Activity {
     ListViewAdapter adapter;
     ProgressDialog mProgressDialog;
     ArrayList<HashMap<String, String>> arraylist;
-    static String RANK = "rank";
-    static String COUNTRY = "country";
-    static String POPULATION = "population";
-    static String FLAG = "flag";
+
+
+
+    static String AIRLINES = "airlines";
+    static String FLIGHTNUMBER = "flightNumber";
+    static String DEPARTUREARRIVALTIME = "departureArrivalTime";
+    static String ARRIVALDEPARTURETIME = "arrivalDepartureTime";
+    static String DEPARTUREARRIVALPLACE = "departureArrivalPlace";
+    static String ARRIVALDEPARTUREPLACE = "arrivalDepartureplace";
+    static String SEATS = "seats";
+    static String KABINCLASS = "kabinclass";
+    static String PRICE = "price";
+    static String FLAG= "flag";
     // URL Address
     //String url = "http://www.enuygun.com/ucak-bileti/barcelona-airport/istanbul/?gidis=26.12.2014&donus=28.12.2014&yetiskin=1";
     String url = "http://online.alobilethatti.com/Home/Search?fromAirport=%C4%B0stanbul%2CAtaturk%2CT%C3%BCrkiye%20(IST)&fromAirportCode=IST-IST&toAirport=Barselona%2CEl%20Parat%20Airport%2C%C4%B0spanya%20(BCN)&toAirportCode=BCN-BCN&fromDate=27.12.2014&toDate=03.01.2015&adult=1&child=0&infant=0&senior=0&young=0&military=0&student=0&flightType=RET";
