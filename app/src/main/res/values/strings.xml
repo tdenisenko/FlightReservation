@@ -65,6 +65,214 @@
         <item>USQ-USQ|Uşak,Usak,Türkiye (USQ)</item>
         <item>VAN-VAN|Van,Van,Türkiye (VAN)</item>
         <item>ONQ-ONQ|Zonguldak,Zonguldak,Türkiye (ONQ)</item>
+        <item>|Basel Mulhouse, Basel Mulhouse Tümü</item>
+        <item>Fransa-LYS|Liyon, Liyon Tümü</item>
+        <item>Fransa-PAR|Paris, Paris Tümü</item>
+        <item>Fransa AGF-AGF|Agen,La Garenne,Fransa (AGF)</item>
+        <item>AJA-AJA|Ajaccio,Campo Dell Oro,Fransa (AJA)</item>
+        <item>LBI-LBI|Albi,Le Sequestre,Fransa (LBI)</item>
+        <item>AHZ-AHZ|Alpe D Huez,Alpe D Huez,Fransa (AHZ)</item>
+        <item>ANE-ANE|Angers,Marce,Fransa (ANE)</item>
+        <item>ANG-ANG|Angouleme,Brie-Champniers,Fransa (ANG)</item>
+        <item>NCY-NCY|Annecy,Annecy Meythe,Fransa (NCY)</item>
+        <item>OBS-OBS|Aubenas,Vals Lanas,Fransa (OBS)</item>
+        <item>AUR-AUR|Aurillac,Aurillac,Fransa (AUR)</item>
+        <item>AUF-AUF|Auxerre,Auxerre Branches,Fransa (AUF)</item>
+        <item>AVN-AVN|Avignon,Avignon Caumont,Fransa (AVN)</item>
+        <item>AVF-AVF|Avoriaz,Avoriaz,Fransa (AVF)</item>
+        <item>BAE-BAE|Barcelonnette,Barcelonnette,Fransa (BAE)</item>
+        <item>BSL-EAP|Basel Mulhouse,Basel Euroairport,Fransa (BSL)</item>
+        <item>MLH-EAP|Basel Mulhouse,Mulhouse Euroairport,Fransa (MLH)</item>
+        <item>BIA-BIA|Bastia,Poretta,Fransa (BIA)</item>
+        <item>BOR-BOR|Belfort,Fontaine,Fransa (BOR)</item>
+        <item>EGC-EGC|Bergerac,Roumanieres,Fransa (EGC)</item>
+        <item>BZR-BZR|Beziers,Vias,Fransa (BZR)</item>
+        <item>BIQ-BIQ|Biarritz,Biarritz Parme,Fransa (BIQ)</item>
+        <item>BOD-BOD|Bordo,Merignac,Fransa (BOD)BOU-BOU|Bourges,Bourges,Fransa (BOU)</item>
+        <item>BES-BES|Brest,Guipavas,Fransa (BES)</item>
+        <item>BVE-BVE|Brive La Gaillard,Laroche,Fransa (BVE)</item>
+        <item>CFR-CFR|Caen,Carpiquet,Fransa (CFR)</item>
+        <item>ZAO-ZAO|Cahors,Laberandie,Fransa (ZAO)</item>
+        <item>CQF-CQF|Calais,Calais,Fransa (CQF)</item>
+        <item>CLY-CLY|Calvi,Sainte Catherine,Fransa (CLY)</item>
+        <item>CEQ-CEQ|Cannes,Mandelieu,Fransa (CEQ)</item>
+        <item>CCF-CCF|Carcassonne,Salvaza,Fransa (CCF)</item>
+        <item>DCM-DCM|Castres,Mazamet,Fransa (DCM)</item>
+        <item>CMF-CMF|Chambery,Chambery,Fransa (CMF)</item>
+        <item>CHR-CHR|Chateauroux,Chateauroux,Fransa (CHR)</item>
+        <item>CER-CER|Cherbourg,Maupertus,Fransa (CER)</item>
+        <item>CET-CET|Cholet,Le Pontreau,Fransa (CET)</item>
+        <item>III-III|City Name Test,City Name Test,Fransa (III)</item>
+        <item>VVE-VVE|City Name Test Three,City Name Test Three,Fransa (VVE)</item>
+        <item>CFE-CFE|Clermont Ferrand,Aulnat,Fransa (CFE)</item>
+        <item>CNG-CNG|Cognac,Parvaud,Fransa (CNG)</item>
+        <item>CMR-CMR|Colmar,Colmar Houssen,Fransa (CMR)</item>
+        <item>CVF-CVF|Courchevel,Courchevel,Fransa (CVF)</item>
+        <item>CSF-CSF|Creil,Creil,Fransa (CSF)</item>
+        <item>XCC-XCC|Creusot Montceau,Creusot Montceau,Fransa (XCC)</item>
+        <item>DOL-DOL|Deauville,Saint Gatien,Fransa (DOL)</item>
+        <item>DXA-DXA|Deux Alpes,Deux Alpes,Fransa (DXA)</item>
+        <item>DIJ-DIJ|Dijon,Dijon,Fransa (DIJ)</item>
+        <item>DPE-DPE|Dieppe,Dieppe,Fransa (DPE)</item>
+        <item>DNR-DNR|Dinard,Pleurtuit,Fransa (DNR)</item>
+        <item>DLE-DLE|Dole,Tavaux,Fransa (DLE)</item>
+        <item>EPL-EPL|Epinal,Mirecourt,Fransa (EPL)</item>
+        <item>EVX-EVX|Evreux,Evreux,Fransa (EVX)</item>
+        <item>FSC-FSC|Figari,Sud Corse,Fransa (FSC)</item>
+        <item>FRJ-FRJ|Frejus,Frejus,Fransa (FRJ)</item>
+        <item>GAT-GAT|Gap,Tallard,Fransa (GAT)</item>
+        <item>GFR-GFR|Granville,Granville,Fransa (GFR)</item>
+        <item>HZB-HZB|Hazebrouck,Merville Calonne,Fransa (HZB)</item>
+        <item>JLP-JLP|Juan Les Pins,Juan Les Pins,Fransa (JLP)</item>
+        <item>LBY-LBY|La Baule,Montoir,Fransa (LBY)</item>
+        <item>PLG-PLG|La Plagne,La Plagne,Fransa (PLG)</item>
+        <item>EDM-EDM|La Roche,Les Ajoncs,Fransa (EDM)</item>
+        <item>LRH-LRH|La Rochelle,Laleu,Fransa (LRH)</item>
+        <item>LDV-LDV|Landivisiau,Landivisiau,Fransa (LDV)</item>
+        <item>LAI-LAI|Lannion,Servel,Fransa (LAI)</item>
+        <item>LVA-LVA|Laval,Entrammes,Fransa (LVA)</item>
+        <item>CTT-CTT|Le Castellet,Le Castellet,Fransa (CTT)</item>
+        <item>LEH-LEH|Le Havre,Octeville,Fransa (LEH)</item>
+        <item>LME-LME|Le Mans,Arnage,Fransa (LME)</item>
+        <item>LPY-LPY|Le Puy,Loudes,Fransa (LPY)</item>
+        <item>LTQ-LTQ|Le Touquet,Le Touquet,Fransa (LTQ)</item>
+        <item>LSO-LSO|Les Sables,Talmont,Fransa (LSO)</item>
+        <item>LIL-LIL|Lille,Lesquin,Fransa (LIL)</item>
+        <item>LIG-LIG|Limoges,Bellegarde,Fransa (LIG)</item>
+        <item>LYN-LYS|Liyon,Bron,Fransa (LYN)</item>
+        <item>LYS-LYS|Liyon,Lyon Saint Exupery,Fransa (LYS)</item>
+        <item>GNB-LYS|Liyon,Saint Geoirs,Fransa (GNB)</item>
+        <item>LRT-LRT|Lorient,Lann Bihoue,Fransa (LRT)</item>
+        <item>LDE-LDE|Lourdes Tarbes,Lourdes Tarbes Intl,Fransa (LDE)</item>
+        <item>MRS-MRS|Marsilya,Provence,Fransa (MRS)</item>
+        <item>BYF-BYF|Meaulte,Albert Bray,Fransa (BYF)</item>
+        <item>MVV-MVV|Megeve,Megeve,Fransa (MVV)</item>
+        <item>MEN-MEN|Mende,Brenoux,Fransa (MEN)</item>
+        <item>MFX-MFX|Meribel,Meribel,Fransa (MFX)</item>
+        <item>MZM-MZM|Metz,Frescaty,Fransa (MZM)</item>
+        <item>ETZ-ETZ|Metz Nancy,Metz Nancy Lorraine,Fransa (ETZ)</item>
+        <item>MCU-MCU|Montlucon,Gueret  Lepaud,Fransa (MCU)</item>
+        <item>MPL-MPL|Montpellier,Mediterranee,Fransa (MPL)</item>
+        <item>MXN-MXN|Morlaix,Morlaix,Fransa (MXN)</item>
+        <item>ENC-ENC|Nancy,Essey,Fransa (ENC)</item>
+        <item>NTE-NTE|Nantes,Atlantique,Fransa (NTE)</item>
+        <item>NVS-NVS|Nevers,Nevers,Fransa (NVS)</item>
+        <item>FNI-FNI|Nimes,Garons,Fransa (FNI)</item>
+        <item>NIT-NIT|Niort,Niort,Fransa (NIT)</item>
+        <item>NCE-NCE|Nis,Cote D Azur,Fransa (NCE)</item>
+        <item>ORE-ORE|Orleans,Orleans,Fransa (ORE)</item>
+        <item>POX-PAR|Paris,Cergy Pontoise,Fransa (POX)</item>
+        <item>CDG-PAR|Paris,Charles De Gaulle,Fransa (CDG)</item>
+        <item>BVA-PAR|Paris,Beauvais Tille,Fransa (BVA)</item>
+        <item>LBG-PAR|Paris,Le Bourget,Fransa (LBG)</item>
+        <item>ORY-PAR|Paris,Orly,Fransa (ORY)</item>
+        <item>TNF-PAR|Paris,Toussus Le Noble,Fransa (TNF)</item>
+        <item>VIY-PAR|Paris,Villacoublay,Fransa (VIY)</item>
+        <item>XCR-PAR|Paris,Vatry,Fransa (XCR)</item>
+        <item>PUF-PUF|Pau,Uzein,Fransa (PUF)</item>
+        <item>PGX-PGX|Perigueux,Perigueux,Fransa (PGX)</item>
+        <item>PGF-PGF|Perpignan,Rivesaltes,Fransa (PGF)</item>
+        <item>PIS-PIS|Poitiers,Biard,Fransa (PIS)</item>
+        <item>PRP-PRP|Propriano,Propriano,Fransa (PRP)</item>
+        <item>UIP-UIP|Quimper,Pluguffan,Fransa (UIP)</item>
+        <item>RHE-RHE|Reims,Reims,Fransa (RHE)</item>
+        <item>RNS-RNS|Rennes,Saint Jacques,Fransa (RNS)</item>
+        <item>RNE-RNE|Roanne,Renaison,Fransa (RNE)</item>
+        <item>RCO-RCO|Rochefort,Saint Agnant,Fransa (RCO)</item>
+        <item>RDZ-RDZ|Rodez,Marcillac,Fransa (RDZ)</item>
+        <item>URO-URO|Rouen,Boos,Fransa (URO)</item>
+        <item>RYN-RYN|Royan,Medis,Fransa (RYN)</item>
+        <item>SBK-SBK|Saint Brieuc,Tremuson,Fransa (SBK)</item>
+        <item>SCP-SCP|Saint Crepin,Saint Crepin,Fransa (SCP)</item>
+        <item>EBU-EBU|Saint Etienne,Boutheon,Fransa (EBU)</item>
+        <item>SNR-SNR|Saint Nazaire,Montoir,Fransa (SNR)</item>
+        <item>LTT-LTT|Saint Tropez La Mole,La Mole,Fransa (LTT)</item>
+        <item>SYT-SYT|Saint Yan,Charolais,Fransa (SYT)</item>
+        <item>SEC-SEC|Serre Chevalier,Serre Chevalier,Fransa (SEC)</item>
+        <item>OZ-SOZ|Solenzara,Solenzara,Fransa (SOZ)</item>
+        <item>SXD-SXD|Sophia Antipolis,Sophia Antipolis,Fransa (SXD)</item>
+        <item>SXB-SXB|Strazburg,Strasbourg,Fransa (SXB)</item>
+        <item>TGF-TGF|Tignes,Tignes,Fransa (TGF)</item>
+        <item>TLN-TLN|Toulon,Hyeres,Fransa (TLN)</item>
+        <item>TLS-TLS|Toulouse,Blagnac,Fransa (TLS)</item>
+        <item>TUF-TUF|Tours,Saint Symphorien,Fransa (TUF)</item>
+        <item>VAF-VAF|Valence,Chabeuil,Fransa (VAF)</item>
+        <item>VNE-VNE|Vannes,Meucon,Fransa (VNE)</item>
+        <item>VHY-VHY|Vichy,Charmeil,Fransa (VHY)</item>
+        <item>VTL-VTL|Vittel,Vittel,Fransa (VTL)</item>
+        <item>|ACH-ACH|Altenrhein,Altenrhein,İsviçre (ACH)</item>
+        <item>|ACO-ACO|Ascona,Ascona,İsviçre (ACO)</item>
+        <item>|BRN-BRN|Bern,Belp,İsviçre (BRN)</item>
+        <item>|BXO-BXO|Buochs,Buochs,İsviçre (BXO)</item>
+        <item>|GVA-GVA|Cenevre,Geneva Cointrin Int.  Airport,İsviçre (GVA)</item>
+        <item>|EML-EML|Emmen,Emmen,İsviçre (EML)</item>
+        <item>|LUG-LUG|Lugano,Lugano,İsviçre (LUG)</item>
+        <item>|SMV-SMV|Saint Moritz,Samedan,İsviçre (SMV)</item>
+        <item>|SIR-SIR|Sion,Sion,İsviçre (SIR)</item>
+        <item>|ZRH-ZRH|Zürih,Zurich,İsviçre (ZRH)</item>
+        <item>İtalya-ROM|Roma,Roma Tümü</item>
+        <item>İtalya-VRN|Verona, Verona Tümü</item>
+        <item>İtalyaALL-ALL|Albenga,Albenga,İtalya (ALL)</item>
+        <item>AHO-AHO|Alghero,Fertilia,İtalya (AHO)</item>
+        <item>BZO-BZO|Bolzano Bozen,Bolzano Bozen,İtalya (BZO)</item>
+        <item>BDS-BDS|Brindisi,Papola Casale,İtalya (BDS)</item>
+        <item>CAG-CAG|Cagliari,Elmas,İtalya (CAG)</item>
+        <item>PRJ-PRJ|Capri,Capri,İtalya (PRJ)</item>
+        <item>CTA-CTA|Catania,Fontanarossa,İtalya (CTA)</item>
+        <item>NSY-CTA|Catania,Sigonella Naf,İtalya (NSY)</item>
+        <item>GOA-GOA|Cenova,Cristoforo Colombo,İtalya (GOA)</item>
+        <item>CIY-CIY|Comiso,Comiso,İtalya (CIY)</item>
+        <item>CRV-CRV|Crotone,Crotone,İtalya (CRV)</item>
+        <item>CUF-CUF|Cuneo,Levaldigi,İtalya (CUF)</item>
+        <item>DCI-DCI|Decimomannu,R Decimomannu,İtalya (DCI)</item>
+        <item>EBA-EBA|Elba Island,Marina Di Campo,İtalya (EBA)</item>
+        <item>FLR-FLR|Floransa,Peretola,İtalya (FLR)</item>
+        <item>FOG-FOG|Foggia,Gino Lisa,İtalya (FOG)</item>
+        <item>FRL-FRL|Forli,Luigi Ridolfi,İtalya (FRL)</item>
+        <item>GRS-GRS|Grosseto,Baccarini,İtalya (GRS)</item>
+        <item>ISH-ISH|Ischia,Ischia,İtalya (ISH)</item>
+        <item>JLO-JLO|Jesolo,Jesolo,İtalya (JLO)</item>
+        <item>SUF-SUF|Lamezia Terme,Sant Eufemia,İtalya (SUF)</item>
+        <item>LMP-LMP|Lampedusa,Lampedusa,İtalya (LMP)</item>
+        <item>LCC-LCC|Lecce,Galatina,İtalya (LCC)</item>
+        <item>LCV-LCV|Lucca,Lucca,İtalya (LCV)</item>
+        <item>QMM-QMM|Marina Di Massa,Marina Di Massa,İtalya (QMM)</item>
+        <item>VKB-VKB|Merano Italy,Merano Italy,İtalya (VKB)</item>
+        <item>PMF-MIL|Milano,Parma,İtalya (PMF)</item>
+        <item>SWK-MIL|Milano,Segrate,İtalya (SWK)</item>
+        <item>BGY-MIL|Milano,Bergamo Orio Al Serio,İtalya (BGY)</item>
+        <item>MXP-MIL|Milano,Malpensa,İtalya (MXP)</item>
+        <item>LIN-MIL|Milano,Linate,İtalya (LIN)</item>
+        <item>NAP-NAP|Napoli,Capodichino Airport,İtalya (NAP)</item>
+        <item>OLB-OLB|Olbia,Costa Smeralda,İtalya (OLB)</item>
+        <item>PMO-PMO|Palermo,Punta Raisi,İtalya (PMO)</item>
+        <item>PNL-PNL|Pantelleria,Pantelleria,İtalya (PNL)</item>
+        <item>PEG-PEG|Perugia,Sant Egidio,İtalya (PEG)</item>
+        <item>PSR-PSR|Pescara,Liberi,İtalya (PSR)PEJ-PEJ|Peschiei,Peschiei,İtalya (PEJ)</item>
+        <item>PSA-PSA|Pisa,Galileo Galilei,İtalya (PSA)</item>
+        <item>RAN-RAN|Ravenna,La Spreta,İtalya (RAN)</item>
+        <item>REG-REG|Reggio Calabria,T Menniti,İtalya (REG)</item>
+        <item>RMI-RMI|Rimini,Miramare,İtalya (RMI)</item>
+        <item>CIA-ROM|Roma,Ciampino,İtalya (CIA)</item>
+        <item>FCO-ROM|Roma,Fiumicino,İtalya (FCO)</item>
+        <item>TQR-TQR|San Domino Tremiti Island,San Domino Island,İtalya (TQR)</item>
+        <item>GBN-GBN|San Giovanni Rotondo,San Giovanni Rotondo,İtalya (GBN)</item>
+        <item>SAY-SAY|Siena,Siena,İtalya (SAY)</item>
+        <item>RRO-RRO|Sorrento,Sorrento,İtalya (RRO)</item>
+        <item>TAR-TAR|Taranto,M A Grottag,İtalya (TAR)</item>
+        <item>TRN-TRN|Torino,Torino Caselle Airport,İtalya (TRN)</item>
+        <item>TTB-TTB|Tortoli,Arbatax,İtalya (TTB)</item>
+        <item>TPS-TPS|Trapani,Birgi,İtalya (TPS)</item>
+        <item>TRS-TRS|Trieste,Dei Legionari,İtalya (TRS)</item>
+        <item>UDN-UDN|Udine,Airfield,İtalya (UDN)</item>
+        <item>TSF-VCE|Venedik,Treviso,İtalya (TSF)</item>
+        <item>VCE-VCE|Venedik,Marco Polo,İtalya (VCE)</item>
+        <item>VRN-VRN|Verona,Verona,İtalya (VRN)</item>
+        <item>VBS-VRN|Verona,Brescia Montechiari,İtalya (VBS)</item>
+        <item>VIC-VIC|Vicenza,Vicenza,İtalya (VIC)</item>
+        <item>VIF-VIF|Vieste,Vieste,İtalya (VIF)</item>
+        <item>Vieste,Vieste,İtalya (VIF)</item>
+
 
 
     </string-array>
@@ -128,6 +336,219 @@
     <item>USQ-USQ|Uşak,Usak,Türkiye (USQ)</item>
     <item>VAN-VAN|Van,Van,Türkiye (VAN)</item>
     <item>ONQ-ONQ|Zonguldak,Zonguldak,Türkiye (ONQ)</item>
+        <item>|Basel Mulhouse, Basel Mulhouse Tümü</item>
+        <item>Fransa-LYS|Liyon, Liyon Tümü</item>
+        <item>Fransa-PAR|Paris, Paris Tümü</item>
+        <item>Fransa AGF-AGF|Agen,La Garenne,Fransa (AGF)</item>
+        <item>AJA-AJA|Ajaccio,Campo Dell Oro,Fransa (AJA)</item>
+        <item>LBI-LBI|Albi,Le Sequestre,Fransa (LBI)</item>
+        <item>AHZ-AHZ|Alpe D Huez,Alpe D Huez,Fransa (AHZ)</item>
+        <item>ANE-ANE|Angers,Marce,Fransa (ANE)</item>
+        <item>ANG-ANG|Angouleme,Brie-Champniers,Fransa (ANG)</item>
+        <item>NCY-NCY|Annecy,Annecy Meythe,Fransa (NCY)</item>
+        <item>OBS-OBS|Aubenas,Vals Lanas,Fransa (OBS)</item>
+        <item>AUR-AUR|Aurillac,Aurillac,Fransa (AUR)</item>
+        <item>AUF-AUF|Auxerre,Auxerre Branches,Fransa (AUF)</item>
+        <item>AVN-AVN|Avignon,Avignon Caumont,Fransa (AVN)</item>
+        <item>AVF-AVF|Avoriaz,Avoriaz,Fransa (AVF)</item>
+        <item>BAE-BAE|Barcelonnette,Barcelonnette,Fransa (BAE)</item>
+        <item>BSL-EAP|Basel Mulhouse,Basel Euroairport,Fransa (BSL)</item>
+        <item>MLH-EAP|Basel Mulhouse,Mulhouse Euroairport,Fransa (MLH)</item>
+        <item>BIA-BIA|Bastia,Poretta,Fransa (BIA)</item>
+        <item>BOR-BOR|Belfort,Fontaine,Fransa (BOR)</item>
+        <item>EGC-EGC|Bergerac,Roumanieres,Fransa (EGC)</item>
+        <item>BZR-BZR|Beziers,Vias,Fransa (BZR)</item>
+        <item>BIQ-BIQ|Biarritz,Biarritz Parme,Fransa (BIQ)</item>
+        <item>BOD-BOD|Bordo,Merignac,Fransa (BOD)BOU-BOU|Bourges,Bourges,Fransa (BOU)</item>
+        <item>BES-BES|Brest,Guipavas,Fransa (BES)</item>
+        <item>BVE-BVE|Brive La Gaillard,Laroche,Fransa (BVE)</item>
+        <item>CFR-CFR|Caen,Carpiquet,Fransa (CFR)</item>
+        <item>ZAO-ZAO|Cahors,Laberandie,Fransa (ZAO)</item>
+        <item>CQF-CQF|Calais,Calais,Fransa (CQF)</item>
+        <item>CLY-CLY|Calvi,Sainte Catherine,Fransa (CLY)</item>
+        <item>CEQ-CEQ|Cannes,Mandelieu,Fransa (CEQ)</item>
+        <item>CCF-CCF|Carcassonne,Salvaza,Fransa (CCF)</item>
+        <item>DCM-DCM|Castres,Mazamet,Fransa (DCM)</item>
+        <item>CMF-CMF|Chambery,Chambery,Fransa (CMF)</item>
+        <item>CHR-CHR|Chateauroux,Chateauroux,Fransa (CHR)</item>
+        <item>CER-CER|Cherbourg,Maupertus,Fransa (CER)</item>
+        <item>CET-CET|Cholet,Le Pontreau,Fransa (CET)</item>
+        <item>III-III|City Name Test,City Name Test,Fransa (III)</item>
+        <item>VVE-VVE|City Name Test Three,City Name Test Three,Fransa (VVE)</item>
+        <item>CFE-CFE|Clermont Ferrand,Aulnat,Fransa (CFE)</item>
+        <item>CNG-CNG|Cognac,Parvaud,Fransa (CNG)</item>
+        <item>CMR-CMR|Colmar,Colmar Houssen,Fransa (CMR)</item>
+        <item>CVF-CVF|Courchevel,Courchevel,Fransa (CVF)</item>
+        <item>CSF-CSF|Creil,Creil,Fransa (CSF)</item>
+        <item>XCC-XCC|Creusot Montceau,Creusot Montceau,Fransa (XCC)</item>
+        <item>DOL-DOL|Deauville,Saint Gatien,Fransa (DOL)</item>
+        <item>DXA-DXA|Deux Alpes,Deux Alpes,Fransa (DXA)</item>
+        <item>DIJ-DIJ|Dijon,Dijon,Fransa (DIJ)</item>
+        <item>DPE-DPE|Dieppe,Dieppe,Fransa (DPE)</item>
+        <item>DNR-DNR|Dinard,Pleurtuit,Fransa (DNR)</item>
+        <item>DLE-DLE|Dole,Tavaux,Fransa (DLE)</item>
+        <item>EPL-EPL|Epinal,Mirecourt,Fransa (EPL)</item>
+        <item>EVX-EVX|Evreux,Evreux,Fransa (EVX)</item>
+        <item>FSC-FSC|Figari,Sud Corse,Fransa (FSC)</item>
+        <item>FRJ-FRJ|Frejus,Frejus,Fransa (FRJ)</item>
+        <item>GAT-GAT|Gap,Tallard,Fransa (GAT)</item>
+        <item>GFR-GFR|Granville,Granville,Fransa (GFR)</item>
+        <item>HZB-HZB|Hazebrouck,Merville Calonne,Fransa (HZB)</item>
+        <item>JLP-JLP|Juan Les Pins,Juan Les Pins,Fransa (JLP)</item>
+        <item>LBY-LBY|La Baule,Montoir,Fransa (LBY)</item>
+        <item>PLG-PLG|La Plagne,La Plagne,Fransa (PLG)</item>
+        <item>EDM-EDM|La Roche,Les Ajoncs,Fransa (EDM)</item>
+        <item>LRH-LRH|La Rochelle,Laleu,Fransa (LRH)</item>
+        <item>LDV-LDV|Landivisiau,Landivisiau,Fransa (LDV)</item>
+        <item>LAI-LAI|Lannion,Servel,Fransa (LAI)</item>
+        <item>LVA-LVA|Laval,Entrammes,Fransa (LVA)</item>
+        <item>CTT-CTT|Le Castellet,Le Castellet,Fransa (CTT)</item>
+        <item>LEH-LEH|Le Havre,Octeville,Fransa (LEH)</item>
+        <item>LME-LME|Le Mans,Arnage,Fransa (LME)</item>
+        <item>LPY-LPY|Le Puy,Loudes,Fransa (LPY)</item>
+        <item>LTQ-LTQ|Le Touquet,Le Touquet,Fransa (LTQ)</item>
+        <item>LSO-LSO|Les Sables,Talmont,Fransa (LSO)</item>
+        <item>LIL-LIL|Lille,Lesquin,Fransa (LIL)</item>
+        <item>LIG-LIG|Limoges,Bellegarde,Fransa (LIG)</item>
+        <item>LYN-LYS|Liyon,Bron,Fransa (LYN)</item>
+        <item>LYS-LYS|Liyon,Lyon Saint Exupery,Fransa (LYS)</item>
+        <item>GNB-LYS|Liyon,Saint Geoirs,Fransa (GNB)</item>
+        <item>LRT-LRT|Lorient,Lann Bihoue,Fransa (LRT)</item>
+        <item>LDE-LDE|Lourdes Tarbes,Lourdes Tarbes Intl,Fransa (LDE)</item>
+        <item>MRS-MRS|Marsilya,Provence,Fransa (MRS)</item>
+        <item>BYF-BYF|Meaulte,Albert Bray,Fransa (BYF)</item>
+        <item>MVV-MVV|Megeve,Megeve,Fransa (MVV)</item>
+        <item>MEN-MEN|Mende,Brenoux,Fransa (MEN)</item>
+        <item>MFX-MFX|Meribel,Meribel,Fransa (MFX)</item>
+        <item>MZM-MZM|Metz,Frescaty,Fransa (MZM)</item>
+        <item>ETZ-ETZ|Metz Nancy,Metz Nancy Lorraine,Fransa (ETZ)</item>
+        <item>MCU-MCU|Montlucon,Gueret  Lepaud,Fransa (MCU)</item>
+        <item>MPL-MPL|Montpellier,Mediterranee,Fransa (MPL)</item>
+        <item>MXN-MXN|Morlaix,Morlaix,Fransa (MXN)</item>
+        <item>ENC-ENC|Nancy,Essey,Fransa (ENC)</item>
+        <item>NTE-NTE|Nantes,Atlantique,Fransa (NTE)</item>
+        <item>NVS-NVS|Nevers,Nevers,Fransa (NVS)</item>
+        <item>FNI-FNI|Nimes,Garons,Fransa (FNI)</item>
+        <item>NIT-NIT|Niort,Niort,Fransa (NIT)</item>
+        <item>NCE-NCE|Nis,Cote D Azur,Fransa (NCE)</item>
+        <item>ORE-ORE|Orleans,Orleans,Fransa (ORE)</item>
+        <item>POX-PAR|Paris,Cergy Pontoise,Fransa (POX)</item>
+        <item>CDG-PAR|Paris,Charles De Gaulle,Fransa (CDG)</item>
+        <item>BVA-PAR|Paris,Beauvais Tille,Fransa (BVA)</item>
+        <item>LBG-PAR|Paris,Le Bourget,Fransa (LBG)</item>
+        <item>ORY-PAR|Paris,Orly,Fransa (ORY)</item>
+        <item>TNF-PAR|Paris,Toussus Le Noble,Fransa (TNF)</item>
+        <item>VIY-PAR|Paris,Villacoublay,Fransa (VIY)</item>
+        <item>XCR-PAR|Paris,Vatry,Fransa (XCR)</item>
+        <item>PUF-PUF|Pau,Uzein,Fransa (PUF)</item>
+        <item>PGX-PGX|Perigueux,Perigueux,Fransa (PGX)</item>
+        <item>PGF-PGF|Perpignan,Rivesaltes,Fransa (PGF)</item>
+        <item>PIS-PIS|Poitiers,Biard,Fransa (PIS)</item>
+        <item>PRP-PRP|Propriano,Propriano,Fransa (PRP)</item>
+        <item>UIP-UIP|Quimper,Pluguffan,Fransa (UIP)</item>
+        <item>RHE-RHE|Reims,Reims,Fransa (RHE)</item>
+        <item>RNS-RNS|Rennes,Saint Jacques,Fransa (RNS)</item>
+        <item>RNE-RNE|Roanne,Renaison,Fransa (RNE)</item>
+        <item>RCO-RCO|Rochefort,Saint Agnant,Fransa (RCO)</item>
+        <item>RDZ-RDZ|Rodez,Marcillac,Fransa (RDZ)</item>
+        <item>URO-URO|Rouen,Boos,Fransa (URO)</item>
+        <item>RYN-RYN|Royan,Medis,Fransa (RYN)</item>
+        <item>SBK-SBK|Saint Brieuc,Tremuson,Fransa (SBK)</item>
+        <item>SCP-SCP|Saint Crepin,Saint Crepin,Fransa (SCP)</item>
+        <item>EBU-EBU|Saint Etienne,Boutheon,Fransa (EBU)</item>
+        <item>SNR-SNR|Saint Nazaire,Montoir,Fransa (SNR)</item>
+        <item>LTT-LTT|Saint Tropez La Mole,La Mole,Fransa (LTT)</item>
+        <item>SYT-SYT|Saint Yan,Charolais,Fransa (SYT)</item>
+        <item>SEC-SEC|Serre Chevalier,Serre Chevalier,Fransa (SEC)</item>
+        <item>OZ-SOZ|Solenzara,Solenzara,Fransa (SOZ)</item>
+        <item>SXD-SXD|Sophia Antipolis,Sophia Antipolis,Fransa (SXD)</item>
+        <item>SXB-SXB|Strazburg,Strasbourg,Fransa (SXB)</item>
+        <item>TGF-TGF|Tignes,Tignes,Fransa (TGF)</item>
+        <item>TLN-TLN|Toulon,Hyeres,Fransa (TLN)</item>
+        <item>TLS-TLS|Toulouse,Blagnac,Fransa (TLS)</item>
+        <item>TUF-TUF|Tours,Saint Symphorien,Fransa (TUF)</item>
+        <item>VAF-VAF|Valence,Chabeuil,Fransa (VAF)</item>
+        <item>VNE-VNE|Vannes,Meucon,Fransa (VNE)</item>
+        <item>VHY-VHY|Vichy,Charmeil,Fransa (VHY)</item>
+        <item>VTL-VTL|Vittel,Vittel,Fransa (VTL)</item>
+        <item>|ACH-ACH|Altenrhein,Altenrhein,İsviçre (ACH)</item>
+        <item>|ACO-ACO|Ascona,Ascona,İsviçre (ACO)</item>
+        <item>|BRN-BRN|Bern,Belp,İsviçre (BRN)</item>
+        <item>|BXO-BXO|Buochs,Buochs,İsviçre (BXO)</item>
+        <item>|GVA-GVA|Cenevre,Geneva Cointrin Int.  Airport,İsviçre (GVA)</item>
+        <item>|EML-EML|Emmen,Emmen,İsviçre (EML)</item>
+        <item>|LUG-LUG|Lugano,Lugano,İsviçre (LUG)</item>
+        <item>|SMV-SMV|Saint Moritz,Samedan,İsviçre (SMV)</item>
+        <item>|SIR-SIR|Sion,Sion,İsviçre (SIR)</item>
+        <item>|ZRH-ZRH|Zürih,Zurich,İsviçre (ZRH)</item>
+        <item>|-CTA|Catania, Catania Tümü</item>
+        <item>İtalya-MIL|Milano, Milano Tümü</item>
+        <item>İtalya-VCE|Venedik, Venedik Tümü</item>
+        <item>İtalya-ROM|Roma,Roma Tümü</item>
+        <item>İtalya-VRN|Verona, Verona Tümü</item>
+        <item>İtalyaALL-ALL|Albenga,Albenga,İtalya (ALL)</item>
+        <item>AHO-AHO|Alghero,Fertilia,İtalya (AHO)</item>
+        <item>BZO-BZO|Bolzano Bozen,Bolzano Bozen,İtalya (BZO)</item>
+        <item>BDS-BDS|Brindisi,Papola Casale,İtalya (BDS)</item>
+        <item>CAG-CAG|Cagliari,Elmas,İtalya (CAG)</item>
+        <item>PRJ-PRJ|Capri,Capri,İtalya (PRJ)</item>
+        <item>CTA-CTA|Catania,Fontanarossa,İtalya (CTA)</item>
+        <item>NSY-CTA|Catania,Sigonella Naf,İtalya (NSY)</item>
+        <item>GOA-GOA|Cenova,Cristoforo Colombo,İtalya (GOA)</item>
+        <item>CIY-CIY|Comiso,Comiso,İtalya (CIY)</item>
+        <item>CRV-CRV|Crotone,Crotone,İtalya (CRV)</item>
+        <item>CUF-CUF|Cuneo,Levaldigi,İtalya (CUF)</item>
+        <item>DCI-DCI|Decimomannu,R Decimomannu,İtalya (DCI)</item>
+        <item>EBA-EBA|Elba Island,Marina Di Campo,İtalya (EBA)</item>
+        <item>FLR-FLR|Floransa,Peretola,İtalya (FLR)</item>
+        <item>FOG-FOG|Foggia,Gino Lisa,İtalya (FOG)</item>
+        <item>FRL-FRL|Forli,Luigi Ridolfi,İtalya (FRL)</item>
+        <item>GRS-GRS|Grosseto,Baccarini,İtalya (GRS)</item>
+        <item>ISH-ISH|Ischia,Ischia,İtalya (ISH)</item>
+        <item>JLO-JLO|Jesolo,Jesolo,İtalya (JLO)</item>
+        <item>SUF-SUF|Lamezia Terme,Sant Eufemia,İtalya (SUF)</item>
+        <item>LMP-LMP|Lampedusa,Lampedusa,İtalya (LMP)</item>
+        <item>LCC-LCC|Lecce,Galatina,İtalya (LCC)</item>
+        <item>LCV-LCV|Lucca,Lucca,İtalya (LCV)</item>
+        <item>QMM-QMM|Marina Di Massa,Marina Di Massa,İtalya (QMM)</item>
+        <item>VKB-VKB|Merano Italy,Merano Italy,İtalya (VKB)</item>
+        <item>PMF-MIL|Milano,Parma,İtalya (PMF)</item>
+        <item>SWK-MIL|Milano,Segrate,İtalya (SWK)</item>
+        <item>BGY-MIL|Milano,Bergamo Orio Al Serio,İtalya (BGY)</item>
+        <item>MXP-MIL|Milano,Malpensa,İtalya (MXP)</item>
+        <item>LIN-MIL|Milano,Linate,İtalya (LIN)</item>
+        <item>NAP-NAP|Napoli,Capodichino Airport,İtalya (NAP)</item>
+        <item>OLB-OLB|Olbia,Costa Smeralda,İtalya (OLB)</item>
+        <item>PMO-PMO|Palermo,Punta Raisi,İtalya (PMO)</item>
+        <item>PNL-PNL|Pantelleria,Pantelleria,İtalya (PNL)</item>
+        <item>PEG-PEG|Perugia,Sant Egidio,İtalya (PEG)</item>
+        <item>PSR-PSR|Pescara,Liberi,İtalya (PSR)PEJ-PEJ|Peschiei,Peschiei,İtalya (PEJ)</item>
+        <item>PSA-PSA|Pisa,Galileo Galilei,İtalya (PSA)</item>
+        <item>RAN-RAN|Ravenna,La Spreta,İtalya (RAN)</item>
+        <item>REG-REG|Reggio Calabria,T Menniti,İtalya (REG)</item>
+        <item>RMI-RMI|Rimini,Miramare,İtalya (RMI)</item>
+        <item>CIA-ROM|Roma,Ciampino,İtalya (CIA)</item>
+        <item>FCO-ROM|Roma,Fiumicino,İtalya (FCO)</item>
+        <item>TQR-TQR|San Domino Tremiti Island,San Domino Island,İtalya (TQR)</item>
+        <item>GBN-GBN|San Giovanni Rotondo,San Giovanni Rotondo,İtalya (GBN)</item>
+        <item>SAY-SAY|Siena,Siena,İtalya (SAY)</item>
+        <item>RRO-RRO|Sorrento,Sorrento,İtalya (RRO)</item>
+        <item>TAR-TAR|Taranto,M A Grottag,İtalya (TAR)</item>
+        <item>TRN-TRN|Torino,Torino Caselle Airport,İtalya (TRN)</item>
+        <item>TTB-TTB|Tortoli,Arbatax,İtalya (TTB)</item>
+        <item>TPS-TPS|Trapani,Birgi,İtalya (TPS)</item>
+        <item>TRS-TRS|Trieste,Dei Legionari,İtalya (TRS)</item>
+        <item>UDN-UDN|Udine,Airfield,İtalya (UDN)</item>
+        <item>TSF-VCE|Venedik,Treviso,İtalya (TSF)</item>
+        <item>VCE-VCE|Venedik,Marco Polo,İtalya (VCE)</item>
+        <item>VRN-VRN|Verona,Verona,İtalya (VRN)</item>
+        <item>VBS-VRN|Verona,Brescia Montechiari,İtalya (VBS)</item>
+        <item>VIC-VIC|Vicenza,Vicenza,İtalya (VIC)</item>
+        <item>VIF-VIF|Vieste,Vieste,İtalya (VIF)</item>
+        <item>Vieste,Vieste,İtalya (VIF)</item>
+
+
+
 
     </string-array>
     <string name="City"></string>
