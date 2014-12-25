@@ -12,7 +12,8 @@
         android:id="@+id/Airlines"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/Airlines_label" />
+        android:layout_toRightOf="@+id/Airlines_label"
+        android:layout_alignBottom="@+id/Airlines_label" />
 
     <TextView
         android:id="@+id/Flight_number_label"
@@ -25,7 +26,8 @@
     android:id="@+id/Flight_number"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_toRightOf="@+id/Flight_number_label" />
+    android:layout_toRightOf="@+id/Flight_number_label"
+        android:layout_alignBottom="@+id/Flight_number_label" />
 
     <TextView
         android:id="@+id/departure_arrival_time_label"
@@ -38,20 +40,22 @@
         android:id="@+id/departure_arrival_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/departure_arrival_time_label" />
+        android:layout_toRightOf="@+id/departure_arrival_time_label"
+        android:layout_alignBottom="@+id/departure_arrival_time_label" />
 
     <TextView
         android:id="@+id/arrival_departure_time_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/departure_arrival_time_label"
-        android:text="Departure Time :" />
+        android:text="Arrival Time :" />
 
     <TextView
         android:id="@+id/arrival_departure_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/arrival_departure_time_label" />
+        android:layout_toRightOf="@+id/arrival_departure_time_label"
+        android:layout_alignBottom="@+id/arrival_departure_time_label" />
 
 
     <TextView
@@ -59,25 +63,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/arrival_departure_time_label"
-        android:text="Departure Time :" />
+        android:text="Departure Place :" />
 
     <TextView
         android:id="@+id/departure_arrival_place"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/departure_arrival_place_label" />
+        android:layout_toRightOf="@+id/departure_arrival_place_label"
+        android:layout_alignBottom="@+id/departure_arrival_place_label" />
     <TextView
         android:id="@+id/arrival_departure_place_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/departure_arrival_place_label"
-        android:text="Departure Time :" />
+        android:text="Arrival Place :" />
 
     <TextView
         android:id="@+id/arrival_departure_place"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/arrival_departure_place_label" />
+        android:layout_toRightOf="@+id/arrival_departure_place_label"
+        android:layout_alignBottom="@+id/departure_arrival_place_label" />
 
     <TextView
         android:id="@+id/seat_label"
@@ -91,21 +97,23 @@
         android:id="@+id/seat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/seat_label" />
+        android:layout_toRightOf="@+id/seat_label"
+        android:layout_alignBottom="@+id/seat_label" />
 
     <TextView
         android:id="@+id/class_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/seat_label"
-        android:text="Kabin Class :" />
+        android:text="Cabin Class :" />
 
 
     <TextView
         android:id="@+id/Class"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/class_label" />
+        android:layout_toRightOf="@+id/class_label"
+        android:layout_alignBottom="@+id/class_label" />
 
     <TextView
         android:id="@+id/price_label"
@@ -119,7 +127,8 @@
         android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/price_label" />
+        android:layout_toRightOf="@+id/price_label"
+        android:layout_alignBottom="@+id/price_label" />
 
 
 <ImageView
