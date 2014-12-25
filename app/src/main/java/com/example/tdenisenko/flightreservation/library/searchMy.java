@@ -47,6 +47,9 @@ public class searchMy extends Activity {
     private Spinner spinner2;
     private Spinner spinner3;
     private Spinner spinner4;
+    private Spinner spinner5;
+    private Spinner spinner6;
+
     private TextView textView1;
     private TextView textView2;
     private EditText departure;
@@ -101,10 +104,12 @@ public class searchMy extends Activity {
         spinner2 = (Spinner) findViewById(R.id.spinner2);
         spinner3 = (Spinner) findViewById(R.id.spinner3);
         spinner4 = (Spinner) findViewById(R.id.spinner4);
+        spinner5 = (Spinner) findViewById(R.id.spinner5);
+        spinner6 = (Spinner) findViewById(R.id.spinner6);
         textView1 = (TextView)findViewById(R.id.depdateTextView);
         textView2 = (TextView)findViewById(R.id.arrdateTextView);
-        departure = (EditText) findViewById(R.id.departure_editText);
-        arrival = (EditText) findViewById(R.id.arrival_editText);
+        //departure = (EditText) findViewById(R.id.departure_editText);
+       // arrival = (EditText) findViewById(R.id.arrival_editText);
         login = (Button) findViewById(R.id.loginButton);
         flights = (Button) findViewById(R.id.flights);
 
@@ -113,16 +118,23 @@ public class searchMy extends Activity {
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,R.array.spinner2, android.R.layout.simple_spinner_item);
         ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this,R.array.spinner3, android.R.layout.simple_spinner_item);
         ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(this,R.array.spinner4, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter5 = ArrayAdapter.createFromResource(this,R.array.spinner5, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter6 = ArrayAdapter.createFromResource(this,R.array.spinner6, android.R.layout.simple_spinner_item);
+
 
         // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         adapter4.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter5.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter6.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner1.setAdapter(adapter);
         spinner2.setAdapter(adapter2);
         spinner3.setAdapter(adapter3);
         spinner4.setAdapter(adapter4);
+        spinner5.setAdapter(adapter5);
+        spinner6.setAdapter(adapter6);
 
         // Spinner item selection Listener
         //addListenerOnSpinnerItemSelection();

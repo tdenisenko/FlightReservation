@@ -4,6 +4,20 @@
     <string name="app_name">FlightReservation</string>
     <string name="hello_world">Hello world!</string>
 
+
+    <string name="Dep">Settings</string>
+    <string-array name="spinner5">
+        <item>Ankara</item>
+        <item>Istanbul</item>
+        <item>Bursa</item>
+    </string-array>
+    <string name="Arr">Settings</string>
+    <string-array name="spinner6">
+        <item>Hatay</item>
+        <item>Trabzon</item>
+        <item>Antalya</item>
+    </string-array>
+
     <string name="City"></string>
     <string-array name="city_spinner">
         <item>Ankara</item>
@@ -117,6 +131,7 @@
         <item>Premium Economy</item>
         <item>Business</item>
         <item>First Class</item>
+
     </string-array>
     <!-- start of login1 -->
     <string name="username">Username:</string>
