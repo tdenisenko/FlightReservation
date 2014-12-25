@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ListView;
 
 import com.example.tdenisenko.flightreservation.R;
@@ -37,13 +38,23 @@ public class SearchHtmlParser extends Activity {
     static String KABINCLASS = "kabinclass";
     static String PRICE = "price";
     static String FLAG= "flag";
-    String Sehir1;
-    String Sehir2;
-    Date fdate,tdate;
+    String from = "Antalya,Antalya,Türkiye (AYT)";
+    String fromCode = from.substring(from.length() - 4, from.length() - 1);
+    String fromCityCode = "AYT";
+    String fromDate = "28.12.2014";
+    String to = "Ankara, Esenboga, Türkiye (ESB)";
+    String toCode = to.substring(to.length() - 4, to.length() - 1);
+    String toCityCode = "ANK";
+    String toDate = "01.01.2015";
+
+    int adult = 1, child = 0, infant = 0;
+    String flightType = "RET";
     // URL Address
     //String url = "http://www.enuygun.com/ucak-bileti/barcelona-airport/istanbul/?gidis=26.12.2014&donus=28.12.2014&yetiskin=1";
 
-    String url = "http://online.alobilethatti.com/Home/Search?fromAirport="+Sehir1+")&fromAirportCode=-"+Sehir1.toUpperCase().substring(0,2)+"&toAirport="+Sehir2+")&toAirportCode=-"+Sehir2.toUpperCase().substring(0,2)+"&fromDate="+fdate+"&toDate="+tdate+"&adult=1&child=0&infant=0&senior=0&young=0&military=0&student=0&flightType=RET";
+    String url = "http://online.alobilethatti.com/Home/Search?fromAirport=" + from + "&fromAirportCode=" + fromCode + "-" + fromCityCode + "&toAirport=" + to + "&toAirportCode=" + toCode + "-" + toCityCode + "&fromDate=" + fromDate + "&toDate=" + toDate + "&adult=" + adult + "&child=" + child + "&infant" + infant + "&senior=0&young=0&military=0&student=0&flightType=" + flightType;
+    //String url = "http://online.alobilethatti.com/Home/Search?fromAirport=%C4%B0stanbul%2C%20Sabiha%20Gokcen%2C%20T%C3%BCrkiye%20(SAW)&fromAirportCode=SAW-IST&toAirport=Antalya%2C%20Antalya%2C%20T%C3%BCrkiye%20(AYT)&toAirportCode=AYT-AYT&fromDate=27.12.2014&toDate=01.01.2015&adult=1&child=0&infant=0&senior=0&young=0&military=0&student=0&flightType=ONE"
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +62,7 @@ public class SearchHtmlParser extends Activity {
         setContentView(R.layout.listview_main);
         // Execute DownloadJSON AsyncTask
         new JsoupListView().execute();
+        Log.d("yarrak", url);
 
     }
 
@@ -98,7 +110,7 @@ public class SearchHtmlParser extends Activity {
                         String arrTime = divs.select("div:eq(2)").select("span[name=ArrivalTime]").text();
                         String depAirport = divs.select("div:eq(3)").select("span[name=DepartureAirportName]").text();
                         String arrAirport = divs.select("div:eq(3)").select("span[name=ArrivalAirportName]").text();
-                        String classes = divs.select("div:eq(4)").select("span").text();
+                        String classes = divs.select("div:eq(4)").select("span").text().substring(0, 25);
 
                         //Log.d("dogrumu", arrAirport);
                         // Identify all img src's
